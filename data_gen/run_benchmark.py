@@ -62,8 +62,8 @@ metrics_lst = [
 metrics = ','.join(metrics_lst)
 
 def get_compute_time(ans) -> float:
-    print("------------", type(ans))
-    print(ans)
+    #print("------------", type(ans))
+    #print(ans)
     pattern = r"Compute time: ([\d.]+)"
     match = re.search(pattern, ans.stdout.decode())
 
@@ -90,8 +90,9 @@ def get_program_metrics(thread_count=1, repeat = 2) -> float:
     return res
 
 def get_host_name():
-    # add utilization
-    return "cruntcy1"
+    # TODO: add utilization in training data and host spec (maybe another excel)
+    ans = subprocess.run(["hostname"], capture_output=True)
+    return ans.stdout.decode()
 
 def iterate_folder(parent_folder, host_spec):
     
@@ -114,6 +115,7 @@ def iterate_folder(parent_folder, host_spec):
 if __name__ == "__main__":
     wd = os.getcwd()
     host_spec = get_host_name()
+    print(host_spec)
     parent_folder = "1"
     iterate_folder(parent_folder, host_spec)
     os.chdir(wd)
