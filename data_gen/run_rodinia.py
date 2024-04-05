@@ -1,6 +1,8 @@
+import getopt
 import os
 import re
 import subprocess 
+import sys
 import time
 
 import pandas as pd
@@ -46,6 +48,8 @@ METRICS_LIST = [
     'dTLB-loads',
     'iTLB-load-misses',
     'iTLB-loads',
+    'node-load-misses',
+    'node-loads',
     # Kernel PMU event
     'branch-instructions',
     'branch-misses',
@@ -53,8 +57,6 @@ METRICS_LIST = [
     'cache-references',
     'cpu-cycles',
     'instructions',
-    'msr/aperf/',
-    'msr/mperf/',
     'msr/tsc/',
     'stalled-cycles-backend',
     'stalled-cycles-frontend',
@@ -90,9 +92,9 @@ PROGS = [
 ]
 
 
-def get_run_command(prog_name, threads) -> list:
+def get_run_command(prog_name, threads, input_file) -> list:
     if prog_name == 'bfs':
-        return ['./bfs', f'{threads}', '../../data/bfs/graph1MW_6.txt']
+        return ['./bfs', f'{threads}', input_file]
     else:
         return []
 
@@ -111,16 +113,17 @@ def get_compute_time(ans) -> float:
         return None
 
 def parse_prog_metrics(compute_time, output_path) -> dict:
+    time.sleep(3)
     df = pd.read_csv(output_path, skiprows=1, header=None)
     prod_dict = {'compute_time': compute_time}
-    for index, row in df.iterrows():
+    for _, row in df.iterrows():
         if list(row)[2]:
             prod_dict[list(row)[2]] = list(row)[0]
     return prod_dict
 
-def get_program_metrics(run_id, prog_name, threads, repeat=5) -> dict:
-    run_command_lst = get_run_command(prog_name, threads)
-    output_path = f'/home/yl3750/MultiorePerformancePrediction/data/prog_benchmark/{run_id}_{prog_name}_t{threads}.csv'
+def get_program_metrics(run_id, prog_name, threads, input_file, repeat=5) -> dict:
+    run_command_lst = get_run_command(prog_name, threads, input_file)
+    output_path = f'/home/yl3750/MultiorePerformancePrediction/data/prog_benchmark/{run_id}.csv'
     try:
         ans = subprocess.run([
             'perf', 'stat', 
@@ -130,7 +133,6 @@ def get_program_metrics(run_id, prog_name, threads, repeat=5) -> dict:
             ] + run_command_lst, capture_output=True)
     except subprocess.CalledProcessError as e: 
         print(f'Command failed with return code {e.returncode}')
-    
     compute_time = get_compute_time(ans)
     return parse_prog_metrics(compute_time, output_path)
 
@@ -162,30 +164,45 @@ def parse_host_spec_and_speedup(run_id, prog, threads, host_status, speed_up):
             'host_cpu_idle': average_cpu_idle, 'host_memused': average_memused, 'speed_up': speed_up}
 
 
-def run_openmp():
-    run_id = 0
+def run_openmp(prog, input_file, size):
     data = {}
-    for prog in PROGS:
-        child = os.path.join(OPENMP_PROG_DIR, prog)
-        os.chdir(child)
 
-        base_time = float('inf')
-        for threads in [1, 2, 4, 8, 16]:
-            print(f'running {prog} with {threads} threads...', )
-            host_status = get_host_status()
-            program_metrics = get_program_metrics(run_id, prog, threads)
-            if threads == 1:
-                base_time = program_metrics['compute_time']
-            speed_up = base_time / program_metrics['compute_time']
-            host_spec_and_speedup = parse_host_spec_and_speedup(run_id, prog, threads, host_status, speed_up)
-            data[run_id] = program_metrics | host_spec_and_speedup
-            time.sleep(10)
-            run_id += 1
+    child = os.path.join(OPENMP_PROG_DIR, prog)
+    os.chdir(child)
+
+    base_time = float('inf')
+    for threads in [1, 2, 4, 8, 16, 32, 64, 128]:
+        run_id = f'{prog}_{size}_t{threads}'
+        print(f'running {run_id} ...')
+        host_status = get_host_status()
+        program_metrics = get_program_metrics(run_id, prog, threads, input_file)
+        program_metrics['size'] = size
+        if threads == 1:
+            base_time = program_metrics['compute_time']
+        speed_up = base_time / program_metrics['compute_time']
+        host_spec_and_speedup = parse_host_spec_and_speedup(run_id, prog, threads, host_status, speed_up)
+        data[run_id] = program_metrics | host_spec_and_speedup
+        time.sleep(10)
+
     df = pd.DataFrame.from_dict(data, orient='index')
-    df.to_csv('/home/yl3750/MultiorePerformancePrediction/data/training.csv', index=False)
-
+    df.to_csv(f'/home/yl3750/MultiorePerformancePrediction/data/training_data/{prog}_{size}.csv', index=False)
+    print(f'Finished saving {prog}_{size} result.')
 
 if __name__ == '__main__':
     wd = os.getcwd()
-    run_openmp()
+    
+    try:
+        arguments, values = getopt.getopt(sys.argv[1:], "psi", ["prog=", "size=", "input="])
+        for currentArgument, currentValue in arguments:
+            if currentArgument in ("-p", "--prog"):
+                prog = currentValue
+            elif currentArgument in ("-s", "--size"):
+                size = currentValue
+            elif currentArgument in ("-i", "--input"):
+                input_file = currentValue     
+    except getopt.error as err:
+        print(str(err))
+
+    run_openmp(prog, input_file, size)
+
     os.chdir(wd)
