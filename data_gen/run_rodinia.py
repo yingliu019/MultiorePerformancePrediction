@@ -48,8 +48,8 @@ METRICS_LIST = [
     'dTLB-loads',
     'iTLB-load-misses',
     'iTLB-loads',
-    'node-load-misses',
-    'node-loads',
+    # 'node-load-misses',
+    # 'node-loads',
     # Kernel PMU event
     'branch-instructions',
     'branch-misses',
@@ -57,6 +57,8 @@ METRICS_LIST = [
     'cache-references',
     'cpu-cycles',
     'instructions',
+    'msr/aperf/',
+    'msr/mperf/', 
     'msr/tsc/',
     'stalled-cycles-backend',
     'stalled-cycles-frontend',
@@ -109,7 +111,6 @@ def get_compute_time(ans) -> float:
         # print(f'Compute time: {compute_time:.6f}')
         return compute_time
     else:
-        # print('Compute time not found in process output')
         return None
 
 def parse_prog_metrics(compute_time, output_path) -> dict:
@@ -142,6 +143,11 @@ def get_host_status():
     return host_status.stdout.decode()
 
 
+def get_host_name():
+    ans = subprocess.run(["hostname"], capture_output=True)
+    return ans.stdout.decode().split('.')[0]
+
+
 def parse_host_spec_and_speedup(run_id, prog, threads, host_status, speed_up):
     lines = host_status.splitlines()
     for index, line in enumerate(lines):
@@ -171,8 +177,10 @@ def run_openmp(prog, input_file, size):
     os.chdir(child)
 
     base_time = float('inf')
+    hostname = get_host_name()
+    speed_up = 0
     for threads in [1, 2, 4, 8, 16, 32, 64, 128]:
-        run_id = f'{prog}_{size}_t{threads}'
+        run_id = f'{prog}_{size}_t{threads}_{hostname}'
         print(f'running {run_id} ...')
         host_status = get_host_status()
         program_metrics = get_program_metrics(run_id, prog, threads, input_file)
@@ -185,8 +193,8 @@ def run_openmp(prog, input_file, size):
         time.sleep(10)
 
     df = pd.DataFrame.from_dict(data, orient='index')
-    df.to_csv(f'/home/yl3750/MultiorePerformancePrediction/data/training_data/{prog}_{size}.csv', index=False)
-    print(f'Finished saving {prog}_{size} result.')
+    df.to_csv(f'/home/yl3750/MultiorePerformancePrediction/data/training_data/{prog}_{size}_{hostname}.csv', index=False)
+    print(f'Finished saving {prog}_{size}_{hostname} result.')
 
 if __name__ == '__main__':
     wd = os.getcwd()

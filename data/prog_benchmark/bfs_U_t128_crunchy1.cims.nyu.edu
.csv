@@ -1,0 +1,50 @@
+# started on Fri Apr  5 03:22:34 2024
+
+3787846336,,branch-instructions,3.67%,1079174977,13.04,452.497,M/sec
+23773343,,branch-misses,2.77%,1343594342,16.23,0.62,of all branches
+8225633,,cache-misses,10.54%,1067290024,12.89,16.770,of all cache refs
+50060471,,cache-references,6.33%,1059320010,12.80,5.980,M/sec
+19289976494,,cpu-cycles,2.96%,521903195,6.31,2.304,GHz
+15850620904,,instructions,4.11%,778378489,9.40,0.82,insn per cycle
+,,,,,0.24,stalled cycles per insn
+3861287525,,stalled-cycles-backend,3.37%,768732943,9.29,19.99,backend cycles idle
+2156963684,,stalled-cycles-frontend,6.63%,761517495,9.20,11.17,frontend cycles idle
+0,,alignment-faults,0.00%,8371848955,100.00,0.000,K/sec
+0,,bpf-output,0.00%,8371848955,100.00,0.000,K/sec
+1062,,context-switches,9.37%,8371848955,100.00,0.127,K/sec
+8370.11,msec,cpu-clock,2.96%,8371848955,100.00,2.728,CPUs utilized
+207,,cpu-migrations,11.48%,8371848955,100.00,0.025,K/sec
+0,,dummy,0.00%,8371848955,100.00,0.000,K/sec
+0,,emulation-faults,0.00%,8371848955,100.00,0.000,K/sec
+0,,major-faults,0.00%,8371848955,100.00,0.000,K/sec
+4244,,minor-faults,7.67%,8371848955,100.00,0.507,K/sec
+4244,,page-faults,7.67%,8371848955,100.00,0.507,K/sec
+8371.85,msec,task-clock,2.96%,8371848955,100.00,2.729,CPUs utilized
+19930782,,L1-dcache-load-misses,4.63%,1008604832,12.19,0.31,of all L1-dcache hits
+6373807517,,L1-dcache-loads,2.23%,1253193338,15.14,761.417,M/sec
+5389,,L1-dcache-prefetch-misses,2.83%,986658833,11.92,0.644,K/sec
+14915989,,L1-dcache-prefetches,4.46%,976575917,11.80,1.782,M/sec
+5432985,,L1-icache-load-misses,10.88%,482739798,5.83,0.12,of all L1-icache hits
+4678232975,,L1-icache-loads,0.91%,481248037,5.81,558.863,M/sec
+31143,,L1-icache-prefetches,24.99%,723175910,8.74,0.004,M/sec
+8143673,,LLC-load-misses,13.20%,730241556,8.82,17.41,of all LL-cache hits
+46776795,,LLC-loads,4.95%,744870265,9.00,5.588,M/sec
+12423667,,LLC-stores,7.59%,516433541,6.24,1.484,M/sec
+24319313,,branch-load-misses,3.12%,783726309,9.47,2.905,M/sec
+3998354975,,branch-loads,3.14%,1050483778,12.69,477.645,M/sec
+2709729,,dTLB-load-misses,17.95%,1059480067,12.80,0.04,of all dTLB cache hits
+6510500248,,dTLB-loads,3.23%,1322745536,15.98,777.747,M/sec
+7714,,iTLB-load-misses,5.91%,1319474222,15.94,0.00,of all iTLB cache hits
+4511134811,,iTLB-loads,3.80%,781764743,9.44,538.902,M/sec
+3934050424,,branch-instructions,3.98%,1042051082,12.59,469.963,M/sec
+24377495,,branch-misses,4.19%,1308709801,15.81,0.63,of all branches
+7942093,,cache-misses,11.92%,1058667191,12.79,16.192,of all cache refs
+48037395,,cache-references,8.00%,1070987340,12.94,5.739,M/sec
+19335622261,,cpu-cycles,2.82%,543910108,6.57,2.310,GHz
+15187745549,,instructions,3.19%,815191385,9.85,0.79,insn per cycle
+,,,,,0.25,stalled cycles per insn
+19881336940,,msr/aperf/,2.82%,8371848955,100.00,2375.031,M/sec
+17563639539,,msr/mperf/,2.95%,8371848955,100.00,2098.158,M/sec
+17571194172,,msr/tsc/,2.96%,8371848955,100.00,2099.061,M/sec
+3871739233,,stalled-cycles-backend,1.76%,811751132,9.81,20.05,backend cycles idle
+2520378182,,stalled-cycles-frontend,4.29%,811210014,9.80,13.05,frontend cycles idle
