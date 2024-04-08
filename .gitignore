@@ -1,4 +1,5 @@
 benchmark/rodinia/*
+data/prog_benchmark/*
 
 *.o
 *.out

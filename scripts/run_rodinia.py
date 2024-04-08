@@ -1,3 +1,4 @@
+import datetime
 import getopt
 import os
 import re
@@ -181,10 +182,12 @@ def run_openmp(prog, input_file, size):
     speed_up = 0
     for threads in [1, 2, 4, 8, 16, 32, 64, 128]:
         run_id = f'{prog}_{size}_t{threads}_{hostname}'
-        print(f'running {run_id} ...')
+        current_time = datetime.datetime.now()
+        print(f'running {run_id} at {current_time} ...')
         host_status = get_host_status()
         program_metrics = get_program_metrics(run_id, prog, threads, input_file)
         program_metrics['size'] = size
+        program_metrics['run_time'] = current_time
         if threads == 1:
             base_time = program_metrics['compute_time']
         speed_up = base_time / program_metrics['compute_time']
@@ -193,7 +196,8 @@ def run_openmp(prog, input_file, size):
         time.sleep(10)
 
     df = pd.DataFrame.from_dict(data, orient='index')
-    df.to_csv(f'/home/yl3750/MultiorePerformancePrediction/data/training_data/{prog}_{size}_{hostname}.csv', index=False)
+    time_str = current_time.strftime("%Y%m%d%H%M")
+    df.to_csv(f'/home/yl3750/MultiorePerformancePrediction/data/training_data/{prog}_{size}_{hostname}_{time_str}.csv', index=False)
     print(f'Finished saving {prog}_{size}_{hostname} result.')
 
 if __name__ == '__main__':
