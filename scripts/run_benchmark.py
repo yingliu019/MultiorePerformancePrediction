@@ -95,12 +95,14 @@ PROGS = [
 ]
 
 
-def get_run_command(prog_name, threads, input_file) -> list:
+def get_rodinia_command(prog_name, threads, input_file) -> list:
     if prog_name == 'bfs':
         return ['./bfs', f'{threads}', input_file]
     else:
         return []
 
+def get_parsec_command(prog_name, threads, size):
+    return ['parsecmgmt', '-a', 'run', '-p', prog_name, '-c', 'gcc', '-i', size, '-n', f'{threads}']
 
 def get_compute_time(ans) -> float:
     pattern = r'Compute time: ([\d.]+)'
@@ -113,6 +115,16 @@ def get_compute_time(ans) -> float:
         return compute_time
     else:
         return None
+        
+def get_real_time(ans):
+    pattern = r"real\t0m(\d+\.\d+)s"
+    # Search for the pattern in the text
+    match = re.search(pattern, ans.stdout.decode())
+    if match:
+      # Extract the captured time in seconds (float)
+      real_time = float(match.group(1))
+      return real_time
+    return None
 
 def parse_prog_metrics(compute_time, output_path) -> dict:
     time.sleep(3)
@@ -123,9 +135,20 @@ def parse_prog_metrics(compute_time, output_path) -> dict:
             prod_dict[list(row)[2]] = list(row)[0]
     return prod_dict
 
-def get_program_metrics(run_id, prog_name, threads, input_file, repeat=5) -> dict:
-    run_command_lst = get_run_command(prog_name, threads, input_file)
+def get_program_metrics(run_id, prog_name, threads, input_file, benchmark, size, repeat=5) -> dict:
+    if benchmark == 'rodinia':
+        run_command_lst = get_rodinia_command(prog_name, threads, input_file)
+    elif benchmark == 'parsec':
+        run_command_lst = get_parsec_command(prog_name, threads, size)
+
     output_path = f'/home/yl3750/MultiorePerformancePrediction/data/prog_benchmark/{run_id}.csv'
+    call_list = [
+            'perf', 'stat', 
+            '-o', output_path, '--field-separator=,',
+            '-r', f'{repeat}',
+            '-e', METRICS,
+            ] + run_command_lst
+    #print(' '.join(call_list))
     try:
         ans = subprocess.run([
             'perf', 'stat', 
@@ -135,7 +158,12 @@ def get_program_metrics(run_id, prog_name, threads, input_file, repeat=5) -> dic
             ] + run_command_lst, capture_output=True)
     except subprocess.CalledProcessError as e: 
         print(f'Command failed with return code {e.returncode}')
-    compute_time = get_compute_time(ans)
+    
+    if benchmark == 'rodinia':
+        compute_time = get_compute_time(ans)
+    elif benchmark == 'parsec':
+        compute_time = get_real_time(ans)
+
     return parse_prog_metrics(compute_time, output_path)
 
 
@@ -144,16 +172,16 @@ def get_host_status():
     return host_status.stdout.decode()
 
 
-def get_host_name():
-    ans = subprocess.run(["hostname"], capture_output=True)
-    return ans.stdout.decode().split('.')[0]
+# def get_host_name():
+#     ans = subprocess.run(["hostname"], capture_output=True)
+#     return ans.stdout.decode().split('.')[0]
 
 
-def parse_host_spec_and_speedup(run_id, prog, threads, host_status, speed_up):
+def parse_host_util_and_speedup(run_id, prog, threads, host_status, speed_up):
     lines = host_status.splitlines()
     for index, line in enumerate(lines):
-        if line.startswith('Linux'):
-            hostname = line.split()[2].lstrip('(').rstrip(')')   
+        #if line.startswith('Linux'):
+        #    hostname = line.split()[2].lstrip('(').rstrip(')')   
         if r'%idle' in line and 'Average:' in line and 'CPU' in line:
             fields = line.split()
             idle_index = fields.index(r'%user')
@@ -166,33 +194,71 @@ def parse_host_spec_and_speedup(run_id, prog, threads, host_status, speed_up):
             fields = line.split()
             idle_index = fields.index(r'%memused')
             average_memused = float(lines[index+1].split()[idle_index])
-    return {'run_id': run_id, 'program': prog, 'threads': threads, 'hostname': hostname, 
+    return {'run_id': run_id, 'program': prog, 'threads': threads, #'hostname': hostname, 
             'host_cpu_user':average_cpu_user , 'host_cpu_system': average_cpu_system, 
             'host_cpu_idle': average_cpu_idle, 'host_memused': average_memused, 'speed_up': speed_up}
 
+def get_host_spec():
+    host_spec = subprocess.run(['lscpu'], capture_output=True)
+    data = host_spec.stdout.decode()
+    data_dict = {}
+    for line in data.splitlines():
+      key, val = line.replace(u'\xa0', u' ').split(':')
+      if key == 'Flags':
+          continue
+      data_dict[key] = val.strip()
+    
+    host_spec = subprocess.run(['inxi', '-Sm'], capture_output=True)
+    data = host_spec.stdout.decode()
+    # Regex patterns to extract the required information
+    host_pattern = r"Host:\s*([^\s]+)"
+    #kernel_pattern = r"Kernel:\s*([^\s]+)"
+    #arch_pattern = r"arch:\s*([^\s]+)"
+    memory_total_pattern = r"total:\s*([^\s]+ [^\s]+)"
+    #memory_available_pattern = r"available:\s*([^\s]+ [^\s]+)"
+    #memory_used_pattern = r"used:\s*([^\s]+ [^\s]+)"
+    
+    # Using search to find the first occurrence and extract data
+    hostname = re.search(host_pattern, data).group(1)
+    #kernel_version = re.search(kernel_pattern, data).group(1)
+    #architecture = re.search(arch_pattern, data).group(1)
+    memory_total = re.search(memory_total_pattern, data).group(1)
+    #memory_available = re.search(memory_available_pattern, data).group(1)
+    #memory_used = re.search(memory_used_pattern, data).group(1)
+    
+    # Print extracted information
+    data_dict['hostname'] = hostname
+    data_dict['total_memory'] = memory_total
 
-def run_openmp(prog, input_file, size):
+    #print(data_dict)
+    return data_dict
+
+def run_openmp(prog, input_file, size, benchmark):
     data = {}
-
-    child = os.path.join(OPENMP_PROG_DIR, prog)
-    os.chdir(child)
+    
+    if benchmark == 'rodinia':
+        child = os.path.join(OPENMP_PROG_DIR, prog)
+        os.chdir(child)
 
     base_time = float('inf')
-    hostname = get_host_name()
+    #hostname = get_host_name()
+    host_spec = get_host_spec()
+    hostname = host_spec['hostname']
     speed_up = 0
     for threads in [1, 2, 4, 8, 16, 32, 64, 128]:
         run_id = f'{prog}_{size}_t{threads}_{hostname}'
         current_time = datetime.datetime.now()
         print(f'running {run_id} at {current_time} ...')
         host_status = get_host_status()
-        program_metrics = get_program_metrics(run_id, prog, threads, input_file)
+        program_metrics = get_program_metrics(run_id, prog, threads, input_file, benchmark, size)
         program_metrics['size'] = size
         program_metrics['run_time'] = current_time
+        program_metrics['benchmark'] = benchmark
         if threads == 1:
             base_time = program_metrics['compute_time']
         speed_up = base_time / program_metrics['compute_time']
-        host_spec_and_speedup = parse_host_spec_and_speedup(run_id, prog, threads, host_status, speed_up)
-        data[run_id] = program_metrics | host_spec_and_speedup
+        host_util_and_speedup = parse_host_util_and_speedup(run_id, prog, threads, host_status, speed_up)
+        data[run_id] = program_metrics | host_util_and_speedup | host_spec
         time.sleep(10)
 
     df = pd.DataFrame.from_dict(data, orient='index')
@@ -202,19 +268,21 @@ def run_openmp(prog, input_file, size):
 
 if __name__ == '__main__':
     wd = os.getcwd()
-    
+    input_file = ''
     try:
-        arguments, values = getopt.getopt(sys.argv[1:], "psi", ["prog=", "size=", "input="])
+        arguments, values = getopt.getopt(sys.argv[1:], "psib", ["prog=", "size=", "input=", "bm="])
         for currentArgument, currentValue in arguments:
             if currentArgument in ("-p", "--prog"):
                 prog = currentValue
             elif currentArgument in ("-s", "--size"):
                 size = currentValue
             elif currentArgument in ("-i", "--input"):
-                input_file = currentValue     
+                input_file = currentValue  
+            elif currentArgument in ("-b", "--bm"):
+                benchmark = currentValue        
     except getopt.error as err:
         print(str(err))
 
-    run_openmp(prog, input_file, size)
+    run_openmp(prog, input_file, size, benchmark)
 
     os.chdir(wd)
