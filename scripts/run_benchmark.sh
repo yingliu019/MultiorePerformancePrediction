@@ -13,7 +13,7 @@ source env.sh
 COMMENT
 
 echo "==================Run Parsec (one csv per line)====================="
-: <<'COMMENT'
+#: <<'COMMENT'
 echo "-----blackscholes (1/8)-----"
 python3 run_benchmark.py --prog=blackscholes --size=simsmall --bm=parsec
 python3 run_benchmark.py --prog=blackscholes --size=simmedium --bm=parsec
@@ -55,7 +55,7 @@ python3 run_benchmark.py --prog=streamcluster --size=simsmall --bm=parsec
 python3 run_benchmark.py --prog=streamcluster --size=simmedium --bm=parsec
 python3 run_benchmark.py --prog=streamcluster --size=simlarge --bm=parsec
 # python3 run_benchmark.py --prog=streamcluster --size=simnative --bm=parsec
-COMMENT
+#COMMENT
 
 echo "-----freqmine (8/8)-----"
 python3 run_benchmark.py --prog=freqmine --size=simsmall --bm=parsec
@@ -65,9 +65,9 @@ python3 run_benchmark.py --prog=freqmine --size=simlarge --bm=parsec
 
 echo "==================Run Rodinia (one csv per line)====================="
 echo "-----bfs (1/3)-----"
-#python3 run_benchmark.py --prog=bfs --size=simsmall --input=../../data/bfs/graph4096.txt --bm=rodinia
-#python3 run_benchmark.py --prog=bfs --size=simmedium --input=../../data/bfs/graph65536.txt --bm=rodinia
-#python3 run_benchmark.py --prog=bfs --size=simlarge --input=../../data/bfs/graph1MW_6.txt --bm=rodinia
+python3 run_benchmark.py --prog=bfs --size=simsmall --input=../../data/bfs/graph4096.txt --bm=rodinia
+python3 run_benchmark.py --prog=bfs --size=simmedium --input=../../data/bfs/graph65536.txt --bm=rodinia
+python3 run_benchmark.py --prog=bfs --size=simlarge --input=../../data/bfs/graph1MW_6.txt --bm=rodinia
 
 echo "-----kmeans (2/3)-----"
 python3 run_benchmark.py --prog=kmeans --size=U --input=../../data/kmeans/kdd_cup --bm=rodinia

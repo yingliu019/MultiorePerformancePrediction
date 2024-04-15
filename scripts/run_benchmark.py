@@ -96,21 +96,59 @@ PROGS = [
 
 def parse_perf_list():
     ans = subprocess.run(['perf', 'list'], capture_output=True)
+
+    lst = []
+    for line in ans.stdout.decode().splitlines():
+        #print('##########',len(line) - len(line.lstrip()), line)
+        line_lst = line.split()
+        #print(len(lst), line_lst)
+        space = len(line) - len(line.lstrip())
+        #if line.startswith('Metric Groups:'):
+        #    break
+        if not line_lst: 
+            continue
+        metrics = line_lst[0]
+        if space == 0:
+            #print('-----', line, metrics)
+            if metrics == 'cache:':
+                break
+        if space == 2:
+            if metrics in ['rNNN', 'Metric', 'states', 'floating', 'es_reg_renames', 'io_transactions']:
+                continue
+            elif any(metrics.startswith(i) for i in ['bpu_', 'sq_misc', 'mem_load_retired', 'simd_', 'br_', 'uops_', 'ssex_', 'sdt_', 'cpu/t1', 'offcore', 'mem:<addr>']):
+                continue
+            elif any(i in metrics for i in ':[]()'):
+                continue
+            if metrics in lst:
+                continue
+        #print(len(lst), metrics)
+        lst.append(metrics)
+    #print(len(lst))
+    return lst #[71:72]
+
+def parse_perf_list_bk():
+    ans = subprocess.run(['perf', 'list'], capture_output=True)
     
     lst = []
     for line in ans.stdout.decode().splitlines():
+        #print('##########',len(line) - len(line.lstrip()), line)
         line_lst = line.split()
+        #print(len(lst), line_lst)
         if line_lst:
             metrics = line_lst[0]
-            if metrics.startswith('sdt_'):
+            if metrics == 'frontend:':
+                break
+            if metrics in ['rNNN', 'Metric', 'states', 'floating', 'es_reg_renames', 'io_transactions']:
                 continue
-            elif metrics == 'rNNN':
+            elif any(metrics.startswith(i) for i in ['fp_', 'misalign', 'bpu_', 'sq_misc', 'mem_load_retired', 'simd_', 'br_', 'uops_', 'ssex_', 'sdt_', 'cpu/t1', 'offcore', 'mem:<addr>']):
                 continue
-            elif metrics.startswith('cpu/t1'):
+            elif any(i in metrics for i in ':[]()'):
                 continue
-            elif metrics.startswith('mem:<addr>'):
+            if metrics in lst: 
                 continue
-            lst.append(line_lst[0])
+            #print(metrics)
+            lst.append(metrics)
+    #print(len(lst), lst[153:160])
     return lst
 
 def get_rodinia_command(prog_name, threads, input_file) -> list:
