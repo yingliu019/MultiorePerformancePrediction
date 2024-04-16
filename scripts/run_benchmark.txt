@@ -1,1335 +1,1335 @@
 ==================Run Parsec (one csv per line)=====================
 -----blackscholes (1/8)-----
-running 0: blackscholes_simsmall_t1_snappy1 at 2024-04-15 20:53:44.957245 ...
-0.101 1
-0.19 2
+running 0: blackscholes_simsmall_t1_crunchy1 at 2024-04-16 00:10:29.283388 ...
+0.141 1
+0.279 2
 finishing cold start
-running 1: blackscholes_simsmall_t1_snappy1 at 2024-04-15 20:53:50.773093 ...
-0.117 1
-0.199 2
-0.29700000000000004 3
-0.4 4
-0.498 5
-running 2: blackscholes_simsmall_t2_snappy1 at 2024-04-15 20:54:13.226384 ...
-0.075 1
-0.134 2
-0.192 3
-0.252 4
-0.31 5
-running 3: blackscholes_simsmall_t4_snappy1 at 2024-04-15 20:54:35.434636 ...
-0.039 1
-0.079 2
-0.12 3
-0.161 4
-0.194 5
-running 4: blackscholes_simsmall_t8_snappy1 at 2024-04-15 20:54:57.609412 ...
-0.029 1
-0.07 2
-0.1 3
-0.132 4
-0.16 5
-running 5: blackscholes_simsmall_t16_snappy1 at 2024-04-15 20:55:19.845162 ...
-0.024 1
-0.048 2
-0.076 3
-0.101 4
-0.125 5
-running 6: blackscholes_simsmall_t32_snappy1 at 2024-04-15 20:55:41.751104 ...
-0.022 1
-0.046 2
-0.068 3
-0.097 4
-0.124 5
-running 7: blackscholes_simsmall_t64_snappy1 at 2024-04-15 20:56:03.741419 ...
-0.026 1
-0.053 2
-0.078 3
-0.101 4
-0.132 5
-running 8: blackscholes_simsmall_t128_snappy1 at 2024-04-15 20:56:25.676887 ...
-0.038 1
-0.069 2
-0.114 3
-0.151 4
-0.186 5
-Finished saving blackscholes_simsmall_snappy1 result.
-running 0: blackscholes_simmedium_t1_snappy1 at 2024-04-15 20:56:50.372052 ...
-0.369 1
-0.718 2
-finishing cold start
-running 1: blackscholes_simmedium_t1_snappy1 at 2024-04-15 20:56:56.726066 ...
-0.362 1
-0.645 2
-1.014 3
-1.313 4
-1.661 5
-running 2: blackscholes_simmedium_t2_snappy1 at 2024-04-15 20:57:20.783644 ...
-0.243 1
-0.503 2
-0.731 3
-1.0 4
-1.244 5
-running 3: blackscholes_simmedium_t4_snappy1 at 2024-04-15 20:57:44.494816 ...
-0.142 1
-0.255 2
-0.376 3
-0.508 4
-0.657 5
-running 4: blackscholes_simmedium_t8_snappy1 at 2024-04-15 20:58:06.934929 ...
-0.074 1
-0.159 2
-0.253 3
-0.362 4
-0.447 5
-running 5: blackscholes_simmedium_t16_snappy1 at 2024-04-15 20:58:29.509367 ...
-0.073 1
-0.131 2
-0.20600000000000002 3
-0.28800000000000003 4
-0.35000000000000003 5
-running 6: blackscholes_simmedium_t32_snappy1 at 2024-04-15 20:58:51.789419 ...
-0.103 1
-0.16399999999999998 2
-0.22899999999999998 3
-0.311 4
-0.379 5
-running 7: blackscholes_simmedium_t64_snappy1 at 2024-04-15 20:59:14.150365 ...
-0.063 1
-0.136 2
-0.197 3
-0.253 4
-0.317 5
-running 8: blackscholes_simmedium_t128_snappy1 at 2024-04-15 20:59:36.321353 ...
-0.06 1
-0.121 2
-0.187 3
-0.258 4
-0.316 5
-Finished saving blackscholes_simmedium_snappy1 result.
-running 0: blackscholes_simlarge_t1_snappy1 at 2024-04-15 21:00:01.518575 ...
-1.11 1
-2.1980000000000004 2
-finishing cold start
-running 1: blackscholes_simlarge_t1_snappy1 at 2024-04-15 21:00:09.404314 ...
-1.079 1
-2.167 2
-3.243 3
-4.351 4
-5.459 5
-running 2: blackscholes_simlarge_t2_snappy1 at 2024-04-15 21:00:36.787072 ...
-0.738 1
-1.413 2
-2.104 3
-2.811 4
-3.49 5
-running 3: blackscholes_simlarge_t4_snappy1 at 2024-04-15 21:01:02.503883 ...
-0.514 1
-1.0070000000000001 2
-1.499 3
-2.015 4
-2.499 5
-running 4: blackscholes_simlarge_t8_snappy1 at 2024-04-15 21:01:27.409236 ...
-0.345 1
-0.715 2
-1.105 3
-1.486 4
-1.8439999999999999 5
-running 5: blackscholes_simlarge_t16_snappy1 at 2024-04-15 21:01:51.923045 ...
-0.347 1
-0.5489999999999999 2
-0.7939999999999999 3
-1.0939999999999999 4
-1.382 5
-running 6: blackscholes_simlarge_t32_snappy1 at 2024-04-15 21:02:15.559195 ...
-0.2 1
-0.435 2
-0.64 3
-0.908 4
-1.116 5
-running 7: blackscholes_simlarge_t64_snappy1 at 2024-04-15 21:02:38.674089 ...
-0.223 1
-0.45 2
-0.672 3
-0.882 4
-1.108 5
-running 8: blackscholes_simlarge_t128_snappy1 at 2024-04-15 21:03:02.193633 ...
-0.214 1
-0.438 2
-0.64 3
-0.852 4
-1.063 5
-Finished saving blackscholes_simlarge_snappy1 result.
------bodytrack (2/8)-----
-running 0: bodytrack_simsmall_t1_snappy1 at 2024-04-15 21:03:27.786119 ...
-0.449 1
-0.815 2
-finishing cold start
-running 1: bodytrack_simsmall_t1_snappy1 at 2024-04-15 21:03:34.605229 ...
-0.389 1
-0.777 2
-1.184 3
-1.58 4
-2.0020000000000002 5
-running 2: bodytrack_simsmall_t2_snappy1 at 2024-04-15 21:03:59.610105 ...
-0.238 1
-0.469 2
-0.707 3
-1.006 4
-1.249 5
-running 3: bodytrack_simsmall_t4_snappy1 at 2024-04-15 21:04:23.986347 ...
-0.192 1
-0.372 2
-0.5569999999999999 3
-0.756 4
-0.967 5
-running 4: bodytrack_simsmall_t8_snappy1 at 2024-04-15 21:04:47.879383 ...
-0.164 1
-0.328 2
-0.507 3
-0.6910000000000001 4
-0.8640000000000001 5
-running 5: bodytrack_simsmall_t16_snappy1 at 2024-04-15 21:05:11.453647 ...
-0.172 1
-0.31699999999999995 2
-0.46699999999999997 3
-0.62 4
-0.771 5
-running 6: bodytrack_simsmall_t32_snappy1 at 2024-04-15 21:05:35.088416 ...
-0.152 1
-0.32499999999999996 2
-0.485 3
-0.645 4
-0.797 5
-running 7: bodytrack_simsmall_t64_snappy1 at 2024-04-15 21:05:58.633313 ...
+running 1: blackscholes_simsmall_t1_crunchy1 at 2024-04-16 00:10:36.019370 ...
 0.17 1
-0.36 2
-0.527 3
-0.726 4
-0.901 5
-running 8: bodytrack_simsmall_t128_snappy1 at 2024-04-15 21:06:22.098898 ...
-0.202 1
-0.43100000000000005 2
-0.631 3
-0.846 4
-1.037 5
-Finished saving bodytrack_simsmall_snappy1 result.
-running 0: bodytrack_simmedium_t1_snappy1 at 2024-04-15 21:06:49.905493 ...
-0.914 1
-1.808 2
-finishing cold start
-running 1: bodytrack_simmedium_t1_snappy1 at 2024-04-15 21:06:57.581549 ...
-1.037 1
-1.931 2
-2.808 3
-3.6879999999999997 4
-4.555 5
-running 2: bodytrack_simmedium_t2_snappy1 at 2024-04-15 21:07:25.259646 ...
-0.566 1
-1.1349999999999998 2
-1.686 3
-2.215 4
-2.852 5
-running 3: bodytrack_simmedium_t4_snappy1 at 2024-04-15 21:07:51.352436 ...
-0.397 1
-0.8440000000000001 2
-1.2400000000000002 3
-1.6310000000000002 4
-2.0140000000000002 5
-running 4: bodytrack_simmedium_t8_snappy1 at 2024-04-15 21:08:16.553670 ...
-0.291 1
-0.609 2
-0.9299999999999999 3
-1.222 4
-1.542 5
-running 5: bodytrack_simmedium_t16_snappy1 at 2024-04-15 21:08:41.290777 ...
-0.24 1
-0.482 2
-0.731 3
-0.972 4
-1.212 5
-running 6: bodytrack_simmedium_t32_snappy1 at 2024-04-15 21:09:05.406495 ...
-0.257 1
-0.531 2
-0.888 3
-1.1520000000000001 4
-1.403 5
-running 7: bodytrack_simmedium_t64_snappy1 at 2024-04-15 21:09:30.472166 ...
-0.289 1
-0.571 2
-0.855 3
-1.134 4
-1.4349999999999998 5
-running 8: bodytrack_simmedium_t128_snappy1 at 2024-04-15 21:09:55.064447 ...
-0.32 1
-0.6659999999999999 2
-0.986 3
-1.299 4
-1.63 5
-Finished saving bodytrack_simmedium_snappy1 result.
-running 0: bodytrack_simlarge_t1_snappy1 at 2024-04-15 21:10:22.041999 ...
-2.503 1
-5.0969999999999995 2
-finishing cold start
-running 1: bodytrack_simlarge_t1_snappy1 at 2024-04-15 21:10:33.501633 ...
-2.557 1
-5.077999999999999 2
-7.568 3
-10.084 4
-12.637 5
-running 2: bodytrack_simlarge_t2_snappy1 at 2024-04-15 21:11:09.701919 ...
-1.463 1
-3.031 2
-4.615 3
-6.171 4
-7.698 5
-running 3: bodytrack_simlarge_t4_snappy1 at 2024-04-15 21:11:41.193090 ...
-1.07 1
-2.047 2
-2.967 3
-4.042 4
-5.084 5
-running 4: bodytrack_simlarge_t8_snappy1 at 2024-04-15 21:12:09.865629 ...
-0.773 1
-1.487 2
-2.129 3
-2.716 4
-3.415 5
-running 5: bodytrack_simlarge_t16_snappy1 at 2024-04-15 21:12:36.681144 ...
-0.572 1
-1.145 2
-1.685 3
-2.248 4
-2.797 5
-running 6: bodytrack_simlarge_t32_snappy1 at 2024-04-15 21:13:03.522870 ...
-0.514 1
-1.037 2
-1.541 3
-2.068 4
-2.572 5
-running 7: bodytrack_simlarge_t64_snappy1 at 2024-04-15 21:13:30.021300 ...
-0.562 1
-1.146 2
-1.7109999999999999 3
-2.312 4
-2.9139999999999997 5
-running 8: bodytrack_simlarge_t128_snappy1 at 2024-04-15 21:13:56.903425 ...
-0.661 1
-1.33 2
-1.952 3
-2.602 4
-3.251 5
-Finished saving bodytrack_simlarge_snappy1 result.
------facesim (3/8)-----
-running 0: facesim_simsmall_t1_snappy1 at 2024-04-15 21:14:26.428243 ...
-5.232 1
-10.244 2
-finishing cold start
-running 1: facesim_simsmall_t1_snappy1 at 2024-04-15 21:14:47.338360 ...
-4.906 1
-9.883 2
-15.251999999999999 3
-20.243 4
-25.258 5
-running 2: facesim_simsmall_t2_snappy1 at 2024-04-15 21:15:43.930187 ...
-3.784 1
-7.635999999999999 2
-11.418 3
-15.27 4
-19.072 5
-running 3: facesim_simsmall_t4_snappy1 at 2024-04-15 21:16:34.294131 ...
-2.97 1
-5.958 2
-8.838000000000001 3
-11.857000000000001 4
-14.882000000000001 5
-running 4: facesim_simsmall_t8_snappy1 at 2024-04-15 21:17:20.510257 ...
-2.673 1
-5.2669999999999995 2
-7.827999999999999 3
-10.517 4
-13.120999999999999 5
-running 5: facesim_simsmall_t16_snappy1 at 2024-04-15 21:18:04.724574 ...
-2.61 1
-5.212 2
-7.856 3
-10.361 4
-13.029 5
-running 6: facesim_simsmall_t32_snappy1 at 2024-04-15 21:18:49.270032 ...
-2.602 1
-5.427 2
-8.187999999999999 3
-10.971999999999998 4
-13.670999999999998 5
-running 7: facesim_simsmall_t64_snappy1 at 2024-04-15 21:19:34.064544 ...
-3.124 1
-6.365 2
-9.575 3
-12.754 4
-15.949 5
-running 8: facesim_simsmall_t128_snappy1 at 2024-04-15 21:20:21.446203 ...
-4.196 1
-8.356 2
-12.423 3
-16.471 4
-20.509 5
-Finished saving facesim_simsmall_snappy1 result.
-running 0: facesim_simmedium_t1_snappy1 at 2024-04-15 21:21:15.960937 ...
-4.842 1
-9.899000000000001 2
-finishing cold start
-running 1: facesim_simmedium_t1_snappy1 at 2024-04-15 21:21:36.003742 ...
-5.135 1
-10.222999999999999 2
-15.215 3
-20.226 4
-25.271 5
-running 2: facesim_simmedium_t2_snappy1 at 2024-04-15 21:22:32.715750 ...
-3.754 1
-7.508 2
-11.306000000000001 3
-15.166 4
-18.975 5
-running 3: facesim_simmedium_t4_snappy1 at 2024-04-15 21:23:23.503719 ...
-2.957 1
-5.833 2
-8.805 3
-11.876 4
-14.969999999999999 5
-running 4: facesim_simmedium_t8_snappy1 at 2024-04-15 21:24:09.520706 ...
-3.025 1
-5.73 2
-8.284 3
-10.947000000000001 4
-13.64 5
-running 5: facesim_simmedium_t16_snappy1 at 2024-04-15 21:24:54.488887 ...
-2.538 1
-5.1259999999999994 2
-7.6 3
-10.241 4
-12.794 5
-running 6: facesim_simmedium_t32_snappy1 at 2024-04-15 21:25:38.341930 ...
-2.778 1
-5.543 2
-8.172 3
-10.906 4
-13.481000000000002 5
-running 7: facesim_simmedium_t64_snappy1 at 2024-04-15 21:26:23.080929 ...
-3.208 1
-6.414 2
-9.516 3
-12.548 4
-15.756 5
-running 8: facesim_simmedium_t128_snappy1 at 2024-04-15 21:27:10.152485 ...
-3.984 1
-8.100999999999999 2
-12.37 3
-16.468 4
-20.656 5
-Finished saving facesim_simmedium_snappy1 result.
-running 0: facesim_simlarge_t1_snappy1 at 2024-04-15 21:28:04.081680 ...
-4.974 1
-10.004999999999999 2
-finishing cold start
-running 1: facesim_simlarge_t1_snappy1 at 2024-04-15 21:28:24.019336 ...
-5.027 1
-10.307 2
-15.387 3
-20.329 4
-25.318 5
-running 2: facesim_simlarge_t2_snappy1 at 2024-04-15 21:29:20.595510 ...
-3.603 1
-7.518000000000001 2
-11.087 3
-14.943 4
-18.509 5
-running 3: facesim_simlarge_t4_snappy1 at 2024-04-15 21:30:10.095773 ...
-3.042 1
-5.92 2
-8.958 3
-11.987 4
-14.865 5
-running 4: facesim_simlarge_t8_snappy1 at 2024-04-15 21:30:56.478556 ...
-2.712 1
-5.399 2
-8.154 3
-10.743 4
-13.266 5
-running 5: facesim_simlarge_t16_snappy1 at 2024-04-15 21:31:41.131677 ...
-2.609 1
-5.227 2
-7.674 3
-10.114 4
-12.798000000000002 5
-running 6: facesim_simlarge_t32_snappy1 at 2024-04-15 21:32:25.361423 ...
-2.583 1
-5.348000000000001 2
-7.973000000000001 3
-10.544 4
-13.247 5
-running 7: facesim_simlarge_t64_snappy1 at 2024-04-15 21:33:10.091549 ...
-3.264 1
-6.4879999999999995 2
-9.591 3
-12.786 4
-15.983 5
-running 8: facesim_simlarge_t128_snappy1 at 2024-04-15 21:33:57.205555 ...
-4.195 1
-8.321000000000002 2
-12.471000000000002 3
-16.593000000000004 4
-20.633000000000003 5
-Finished saving facesim_simlarge_snappy1 result.
------fluidanimate (4/8)-----
-running 0: fluidanimate_simsmall_t1_snappy1 at 2024-04-15 21:34:51.952834 ...
-0.388 1
-0.7250000000000001 2
-finishing cold start
-running 1: fluidanimate_simsmall_t1_snappy1 at 2024-04-15 21:34:58.365970 ...
-0.389 1
-0.778 2
-1.1760000000000002 3
-1.586 4
-1.988 5
-running 2: fluidanimate_simsmall_t2_snappy1 at 2024-04-15 21:35:22.713377 ...
-0.287 1
-0.5469999999999999 2
-0.826 3
-1.121 4
-1.415 5
-running 3: fluidanimate_simsmall_t4_snappy1 at 2024-04-15 21:35:46.093587 ...
-0.239 1
-0.45899999999999996 2
-0.6869999999999999 3
-0.9069999999999999 4
-1.121 5
-running 4: fluidanimate_simsmall_t8_snappy1 at 2024-04-15 21:36:09.550639 ...
-0.209 1
-0.395 2
-0.608 3
-0.817 4
-1.023 5
-running 5: fluidanimate_simsmall_t16_snappy1 at 2024-04-15 21:36:32.745298 ...
-0.222 1
-0.446 2
-0.645 3
-0.855 4
-1.055 5
-running 6: fluidanimate_simsmall_t32_snappy1 at 2024-04-15 21:36:55.822621 ...
-0.277 1
-0.5820000000000001 2
-0.9140000000000001 3
-1.189 4
-1.4620000000000002 5
-running 7: fluidanimate_simsmall_t64_snappy1 at 2024-04-15 21:37:19.286993 ...
-0.371 1
-0.737 2
-1.1019999999999999 3
-1.4469999999999998 4
-1.7839999999999998 5
-running 8: fluidanimate_simsmall_t128_snappy1 at 2024-04-15 21:37:42.951110 ...
-0.496 1
-0.993 2
-1.5110000000000001 3
-2.016 4
-2.5380000000000003 5
-Finished saving fluidanimate_simsmall_snappy1 result.
-running 0: fluidanimate_simmedium_t1_snappy1 at 2024-04-15 21:38:10.186707 ...
-0.674 1
-1.323 2
-finishing cold start
-running 1: fluidanimate_simmedium_t1_snappy1 at 2024-04-15 21:38:17.102151 ...
-0.708 1
-1.406 2
-2.0629999999999997 3
-2.779 4
-3.466 5
-running 2: fluidanimate_simmedium_t2_snappy1 at 2024-04-15 21:38:42.994741 ...
-0.486 1
-0.955 2
-1.414 3
-1.919 4
-2.3850000000000002 5
-running 3: fluidanimate_simmedium_t4_snappy1 at 2024-04-15 21:39:07.830948 ...
-0.365 1
-0.733 2
-1.13 3
-1.496 4
-1.8719999999999999 5
-running 4: fluidanimate_simmedium_t8_snappy1 at 2024-04-15 21:39:32.255415 ...
-0.353 1
-0.707 2
-1.018 3
-1.379 4
-1.701 5
-running 5: fluidanimate_simmedium_t16_snappy1 at 2024-04-15 21:39:56.545935 ...
-0.311 1
-0.5900000000000001 2
-0.9040000000000001 3
-1.2160000000000002 4
-1.5380000000000003 5
-running 6: fluidanimate_simmedium_t32_snappy1 at 2024-04-15 21:40:20.342866 ...
-0.413 1
-0.8819999999999999 2
-1.285 3
-1.685 4
-2.075 5
-running 7: fluidanimate_simmedium_t64_snappy1 at 2024-04-15 21:40:44.544177 ...
-0.481 1
-0.95 2
-1.411 3
-1.86 4
-2.39 5
-running 8: fluidanimate_simmedium_t128_snappy1 at 2024-04-15 21:41:09.131472 ...
-0.686 1
-1.374 2
-2.111 3
-2.7720000000000002 4
-3.4360000000000004 5
-Finished saving fluidanimate_simmedium_snappy1 result.
-running 0: fluidanimate_simlarge_t1_snappy1 at 2024-04-15 21:41:36.936998 ...
-1.933 1
-3.85 2
-finishing cold start
-running 1: fluidanimate_simlarge_t1_snappy1 at 2024-04-15 21:41:46.748573 ...
-1.908 1
-3.843 2
-5.776 3
-7.694 4
-9.637 5
-running 2: fluidanimate_simlarge_t2_snappy1 at 2024-04-15 21:42:19.284843 ...
-1.286 1
-2.5460000000000003 2
-3.819 3
-5.093999999999999 4
-6.302 5
-running 3: fluidanimate_simlarge_t4_snappy1 at 2024-04-15 21:42:48.144003 ...
-0.965 1
-1.924 2
-2.856 3
-3.862 4
-4.8740000000000006 5
-running 4: fluidanimate_simlarge_t8_snappy1 at 2024-04-15 21:43:15.425744 ...
-0.871 1
-1.745 2
-2.625 3
-3.5620000000000003 4
-4.3580000000000005 5
-running 5: fluidanimate_simlarge_t16_snappy1 at 2024-04-15 21:43:42.693262 ...
-0.811 1
-1.624 2
-2.4250000000000003 3
-3.3260000000000005 4
-4.15 5
-running 6: fluidanimate_simlarge_t32_snappy1 at 2024-04-15 21:44:09.581317 ...
-0.922 1
-1.891 2
-2.835 3
-3.7640000000000002 4
-4.731 5
-running 7: fluidanimate_simlarge_t64_snappy1 at 2024-04-15 21:44:37.185992 ...
-1.0 1
-2.052 2
-3.09 3
-4.0649999999999995 4
-5.058 5
-running 8: fluidanimate_simlarge_t128_snappy1 at 2024-04-15 21:45:05.056477 ...
-1.346 1
-2.605 2
-3.8890000000000002 3
-5.18 4
-6.506 5
-Finished saving fluidanimate_simlarge_snappy1 result.
------swaptions (5/8)-----
-running 0: swaptions_simsmall_t1_snappy1 at 2024-04-15 21:45:36.475316 ...
-0.298 1
-0.625 2
-finishing cold start
-running 1: swaptions_simsmall_t1_snappy1 at 2024-04-15 21:45:42.712886 ...
-0.294 1
-0.614 2
-0.942 3
-1.24 4
-1.551 5
-running 2: swaptions_simsmall_t2_snappy1 at 2024-04-15 21:46:06.364326 ...
-0.191 1
-0.362 2
-0.525 3
-0.6940000000000001 4
-0.8820000000000001 5
-running 3: swaptions_simsmall_t4_snappy1 at 2024-04-15 21:46:29.044522 ...
-0.093 1
-0.188 2
-0.28700000000000003 3
-0.396 4
-0.492 5
-running 4: swaptions_simsmall_t8_snappy1 at 2024-04-15 21:46:51.177944 ...
-0.048 1
-0.1 2
-0.151 3
-0.198 4
-0.244 5
-running 5: swaptions_simsmall_t16_snappy1 at 2024-04-15 21:47:13.035826 ...
-0.028 1
-0.057 2
-0.088 3
-0.122 4
-0.151 5
-running 6: swaptions_simsmall_t32_snappy1 at 2024-04-15 21:47:34.907931 ...
-0.005 1
-0.01 2
-0.015 3
-0.02 4
-0.026000000000000002 5
-running 7: swaptions_simsmall_t64_snappy1 at 2024-04-15 21:47:56.464691 ...
-0.005 1
-0.01 2
-0.015 3
-0.02 4
-0.025 5
-running 8: swaptions_simsmall_t128_snappy1 at 2024-04-15 21:48:18.056433 ...
-0.005 1
-0.01 2
-0.016 3
-0.021 4
-0.026000000000000002 5
-Finished saving swaptions_simsmall_snappy1 result.
-running 0: swaptions_simmedium_t1_snappy1 at 2024-04-15 21:48:42.138298 ...
-1.119 1
-2.2569999999999997 2
-finishing cold start
-running 1: swaptions_simmedium_t1_snappy1 at 2024-04-15 21:48:49.955059 ...
-1.111 1
-2.278 2
-3.4000000000000004 3
-4.535 4
-5.6530000000000005 5
-running 2: swaptions_simmedium_t2_snappy1 at 2024-04-15 21:49:17.535042 ...
-0.592 1
-1.192 2
-1.846 3
-2.459 4
-3.061 5
-running 3: swaptions_simmedium_t4_snappy1 at 2024-04-15 21:49:42.315037 ...
-0.365 1
-0.698 2
-1.018 3
-1.33 4
-1.6580000000000001 5
-running 4: swaptions_simmedium_t8_snappy1 at 2024-04-15 21:50:05.644065 ...
-0.178 1
-0.362 2
-0.523 3
-0.7150000000000001 4
-0.8940000000000001 5
-running 5: swaptions_simmedium_t16_snappy1 at 2024-04-15 21:50:28.420241 ...
+0.313 2
+0.46399999999999997 3
+0.635 4
+0.799 5
+running 2: blackscholes_simsmall_t2_crunchy1 at 2024-04-16 00:11:01.221907 ...
 0.098 1
-0.189 2
-0.278 3
-0.368 4
-0.45899999999999996 5
-running 6: swaptions_simmedium_t32_snappy1 at 2024-04-15 21:50:50.468897 ...
-0.089 1
-0.178 2
-0.269 3
-0.364 4
-0.45699999999999996 5
-running 7: swaptions_simmedium_t64_snappy1 at 2024-04-15 21:51:12.554319 ...
-0.005 1
-0.01 2
-0.016 3
-0.022 4
-0.027 5
-running 8: swaptions_simmedium_t128_snappy1 at 2024-04-15 21:51:34.278944 ...
-0.005 1
-0.011 2
-0.017 3
-0.022000000000000002 4
-0.028000000000000004 5
-Finished saving swaptions_simmedium_snappy1 result.
-running 0: swaptions_simlarge_t1_snappy1 at 2024-04-15 21:51:58.273421 ...
-4.369 1
-8.745999999999999 2
-finishing cold start
-running 1: swaptions_simlarge_t1_snappy1 at 2024-04-15 21:52:12.477337 ...
-4.429 1
-8.82 2
-13.212 3
-17.628 4
-22.033 5
-running 2: swaptions_simlarge_t2_snappy1 at 2024-04-15 21:52:56.400243 ...
-2.247 1
-4.537 2
-6.7669999999999995 3
-9.045 4
-11.427 5
-running 3: swaptions_simlarge_t4_snappy1 at 2024-04-15 21:53:29.413689 ...
-1.154 1
-2.311 2
-3.492 3
-4.655 4
-5.819 5
-running 4: swaptions_simlarge_t8_snappy1 at 2024-04-15 21:53:56.620044 ...
+0.196 2
+0.455 3
+0.7050000000000001 4
+1.026 5
+running 3: blackscholes_simsmall_t4_crunchy1 at 2024-04-16 00:11:35.852160 ...
+0.421 1
+0.485 2
+0.548 3
+0.6100000000000001 4
+0.6720000000000002 5
+running 4: blackscholes_simsmall_t8_crunchy1 at 2024-04-16 00:12:04.769257 ...
+0.044 1
+0.087 2
+0.13 3
+0.173 4
+0.21699999999999997 5
+running 5: blackscholes_simsmall_t16_crunchy1 at 2024-04-16 00:12:29.356895 ...
+0.035 1
+0.07100000000000001 2
+0.10600000000000001 3
+0.14 4
+0.17800000000000002 5
+running 6: blackscholes_simsmall_t32_crunchy1 at 2024-04-16 00:12:53.886696 ...
+0.034 1
+0.07 2
+0.10300000000000001 3
+0.138 4
+0.17400000000000002 5
+running 7: blackscholes_simsmall_t64_crunchy1 at 2024-04-16 00:13:18.537424 ...
+0.037 1
+0.074 2
+0.11099999999999999 3
+0.147 4
+0.184 5
+running 8: blackscholes_simsmall_t128_crunchy1 at 2024-04-16 00:13:43.121594 ...
+0.048 1
+0.096 2
+0.14600000000000002 3
+0.199 4
+0.249 5
+Finished saving blackscholes_simsmall_crunchy1 result.
+running 0: blackscholes_simmedium_t1_crunchy1 at 2024-04-16 00:14:10.771704 ...
 0.625 1
-1.245 2
-1.8780000000000001 3
-2.52 4
-3.14 5
-running 5: swaptions_simlarge_t16_snappy1 at 2024-04-15 21:54:21.094516 ...
-0.343 1
-0.667 2
-0.9930000000000001 3
-1.318 4
-1.643 5
-running 6: swaptions_simlarge_t32_snappy1 at 2024-04-15 21:54:44.267622 ...
-0.315 1
+1.2890000000000001 2
+finishing cold start
+running 1: blackscholes_simmedium_t1_crunchy1 at 2024-04-16 00:14:18.465949 ...
+0.635 1
+1.3010000000000002 2
+1.963 3
+2.486 4
+3.0220000000000002 5
+running 2: blackscholes_simmedium_t2_crunchy1 at 2024-04-16 00:14:45.947984 ...
+0.318 1
 0.617 2
-0.9139999999999999 3
-1.2029999999999998 4
-1.501 5
-running 7: swaptions_simlarge_t64_snappy1 at 2024-04-15 21:55:07.296957 ...
-0.276 1
-0.558 2
-0.8380000000000001 3
-1.112 4
-1.3890000000000002 5
-running 8: swaptions_simlarge_t128_snappy1 at 2024-04-15 21:55:30.272075 ...
-0.005 1
-0.011 2
-0.016 3
-0.022 4
-0.027 5
-Finished saving swaptions_simlarge_snappy1 result.
------canneal (6/8)-----
-running 0: canneal_simsmall_t1_snappy1 at 2024-04-15 21:55:54.961265 ...
-1.45 1
-2.9699999999999998 2
-finishing cold start
-running 1: canneal_simsmall_t1_snappy1 at 2024-04-15 21:56:03.601269 ...
-1.513 1
-3.096 2
-4.617 3
-6.245 4
-7.76 5
-running 2: canneal_simsmall_t2_snappy1 at 2024-04-15 21:56:33.633387 ...
-1.424 1
-2.774 2
-4.2059999999999995 3
-5.638 4
-6.977 5
-running 3: canneal_simsmall_t4_snappy1 at 2024-04-15 21:57:03.246027 ...
-1.255 1
-2.521 2
-3.787 3
-5.045999999999999 4
-6.359999999999999 5
-running 4: canneal_simsmall_t8_snappy1 at 2024-04-15 21:57:32.057934 ...
-1.185 1
-2.371 2
-3.553 3
-4.748 4
-5.938000000000001 5
-running 5: canneal_simsmall_t16_snappy1 at 2024-04-15 21:58:00.279530 ...
-1.198 1
-2.393 2
-3.5349999999999997 3
-4.669 4
-5.834999999999999 5
-running 6: canneal_simsmall_t32_snappy1 at 2024-04-15 21:58:28.280457 ...
-1.159 1
-2.311 2
-3.498 3
-4.752000000000001 4
-5.964 5
-running 7: canneal_simsmall_t64_snappy1 at 2024-04-15 21:58:56.559746 ...
-1.216 1
-2.392 2
-3.574 3
-4.763999999999999 4
-6.065999999999999 5
-running 8: canneal_simsmall_t128_snappy1 at 2024-04-15 21:59:24.679549 ...
-1.296 1
-2.567 2
-3.7960000000000003 3
-5.071 4
-6.321 5
-Finished saving canneal_simsmall_snappy1 result.
-running 0: canneal_simmedium_t1_snappy1 at 2024-04-15 21:59:56.007733 ...
-3.764 1
-7.7829999999999995 2
-finishing cold start
-running 1: canneal_simmedium_t1_snappy1 at 2024-04-15 22:00:09.485250 ...
-3.936 1
-7.702 2
-11.03 3
-14.392999999999999 4
-17.84 5
-running 2: canneal_simmedium_t2_snappy1 at 2024-04-15 22:00:49.143036 ...
-3.127 1
-6.295999999999999 2
-9.940999999999999 3
-13.023 4
-16.491 5
-running 3: canneal_simmedium_t4_snappy1 at 2024-04-15 22:01:28.147376 ...
-2.921 1
-6.132 2
-9.126999999999999 3
-11.906999999999998 4
-14.715999999999998 5
-running 4: canneal_simmedium_t8_snappy1 at 2024-04-15 22:02:04.992244 ...
-2.922 1
-5.705 2
-8.458 3
-11.448 4
-14.423 5
-running 5: canneal_simmedium_t16_snappy1 at 2024-04-15 22:02:41.861107 ...
-2.624 1
-5.236000000000001 2
-7.822000000000001 3
-10.454 4
-13.071000000000002 5
-running 6: canneal_simmedium_t32_snappy1 at 2024-04-15 22:03:17.490492 ...
-2.622 1
-5.197 2
-7.821 3
-10.397 4
-12.997 5
-running 7: canneal_simmedium_t64_snappy1 at 2024-04-15 22:03:52.935317 ...
-2.648 1
-5.2989999999999995 2
-7.959999999999999 3
-10.785 4
-13.455 5
-running 8: canneal_simmedium_t128_snappy1 at 2024-04-15 22:04:29.012465 ...
-2.775 1
-5.495 2
-8.209 3
-11.001999999999999 4
-13.788999999999998 5
-Finished saving canneal_simmedium_snappy1 result.
-running 0: canneal_simlarge_t1_snappy1 at 2024-04-15 22:05:08.246196 ...
-9.485 1
-17.686999999999998 2
-finishing cold start
-running 1: canneal_simlarge_t1_snappy1 at 2024-04-15 22:05:31.856847 ...
-9.375 1
-18.307000000000002 2
-27.781000000000002 3
-37.268 4
-46.783 5
-running 2: canneal_simlarge_t2_snappy1 at 2024-04-15 22:06:41.524659 ...
-7.032 1
-14.251999999999999 2
-21.264 3
-28.588 4
-35.686 5
-running 3: canneal_simlarge_t4_snappy1 at 2024-04-15 22:07:40.088639 ...
-7.243 1
-13.573 2
-20.02 3
-26.596 4
-33.782 5
-running 4: canneal_simlarge_t8_snappy1 at 2024-04-15 22:08:36.883420 ...
-6.065 1
-12.144 2
-18.158 3
-24.468 4
-30.401 5
-running 5: canneal_simlarge_t16_snappy1 at 2024-04-15 22:09:30.316450 ...
-6.967 1
-12.867999999999999 2
-18.762 3
-24.567 4
-30.409 5
-running 6: canneal_simlarge_t32_snappy1 at 2024-04-15 22:10:24.570307 ...
-5.875 1
-11.767 2
-17.673 3
-23.497 4
-30.96 5
-running 7: canneal_simlarge_t64_snappy1 at 2024-04-15 22:11:18.736578 ...
-5.908 1
-12.4 2
-18.375 3
-24.366 4
-30.292 5
-running 8: canneal_simlarge_t128_snappy1 at 2024-04-15 22:12:12.058794 ...
-6.168 1
-12.82 2
-19.008 3
-25.207 4
-31.288 5
-Finished saving canneal_simlarge_snappy1 result.
------streamcluster (7/8)-----
-running 0: streamcluster_simsmall_t1_snappy1 at 2024-04-15 22:13:09.510606 ...
-0.2 1
-0.41200000000000003 2
-finishing cold start
-running 1: streamcluster_simsmall_t1_snappy1 at 2024-04-15 22:13:15.560633 ...
-0.204 1
-0.426 2
-0.709 3
-0.9129999999999999 4
-1.119 5
-running 2: streamcluster_simsmall_t2_snappy1 at 2024-04-15 22:13:39.151129 ...
+0.981 3
+1.293 4
+1.661 5
+running 3: blackscholes_simmedium_t4_crunchy1 at 2024-04-16 00:15:12.016337 ...
+0.196 1
+0.41300000000000003 2
+0.605 3
+0.8109999999999999 4
+1.005 5
+running 4: blackscholes_simmedium_t8_crunchy1 at 2024-04-16 00:15:37.471734 ...
 0.147 1
-0.305 2
-0.45099999999999996 3
-0.607 4
-0.766 5
-running 3: streamcluster_simsmall_t4_snappy1 at 2024-04-15 22:14:01.777848 ...
-0.192 1
-0.374 2
-0.554 3
-0.754 4
-0.925 5
-running 4: streamcluster_simsmall_t8_snappy1 at 2024-04-15 22:14:24.655053 ...
-0.351 1
-0.6739999999999999 2
-1.032 3
-1.335 4
-1.677 5
-running 5: streamcluster_simsmall_t16_snappy1 at 2024-04-15 22:14:48.357819 ...
-0.519 1
-1.0510000000000002 2
-1.5780000000000003 3
-2.0920000000000005 4
-2.6310000000000007 5
-running 6: streamcluster_simsmall_t32_snappy1 at 2024-04-15 22:15:12.723988 ...
-5.285 1
-10.55 2
-15.759 3
-24.181 4
-29.463 5
-running 7: streamcluster_simsmall_t64_snappy1 at 2024-04-15 22:16:03.632290 ...
-16.355 1
-32.557 2
-48.562 3
-64.746 4
-80.89099999999999 5
-Finished saving streamcluster_simsmall_snappy1 result.
-running 0: streamcluster_simmedium_t1_snappy1 at 2024-04-15 22:17:48.549998 ...
-0.854 1
-1.737 2
+0.28600000000000003 2
+0.43400000000000005 3
+0.5820000000000001 4
+0.7300000000000001 5
+running 5: blackscholes_simmedium_t16_crunchy1 at 2024-04-16 00:16:02.570757 ...
+0.104 1
+0.216 2
+0.327 3
+0.436 4
+0.547 5
+running 6: blackscholes_simmedium_t32_crunchy1 at 2024-04-16 00:16:27.611486 ...
+0.095 1
+0.189 2
+0.28300000000000003 3
+0.377 4
+0.472 5
+running 7: blackscholes_simmedium_t64_crunchy1 at 2024-04-16 00:16:52.553245 ...
+0.094 1
+0.187 2
+0.279 3
+0.371 4
+0.46499999999999997 5
+running 8: blackscholes_simmedium_t128_crunchy1 at 2024-04-16 00:17:17.429788 ...
+0.099 1
+0.198 2
+0.29600000000000004 3
+0.395 4
+0.493 5
+Finished saving blackscholes_simmedium_crunchy1 result.
+running 0: blackscholes_simlarge_t1_crunchy1 at 2024-04-16 00:17:45.357009 ...
+2.114 1
+4.208 2
 finishing cold start
-running 1: streamcluster_simmedium_t1_snappy1 at 2024-04-15 22:17:55.421631 ...
-0.863 1
-1.686 2
-2.568 3
-3.438 4
-4.2250000000000005 5
-running 2: streamcluster_simmedium_t2_snappy1 at 2024-04-15 22:18:20.757462 ...
-0.436 1
-0.89 2
-1.348 3
-1.816 4
-2.24 5
-running 3: streamcluster_simmedium_t4_snappy1 at 2024-04-15 22:18:44.138605 ...
-0.403 1
-0.778 2
-1.1560000000000001 3
-1.5790000000000002 4
-1.9100000000000001 5
-running 4: streamcluster_simmedium_t8_snappy1 at 2024-04-15 22:19:07.143438 ...
-0.482 1
-0.9490000000000001 2
-1.3940000000000001 3
-1.9050000000000002 4
-2.3880000000000003 5
-running 5: streamcluster_simmedium_t16_snappy1 at 2024-04-15 22:19:30.531754 ...
-0.653 1
-1.32 2
-1.984 3
-3.4459999999999997 4
-4.224 5
-running 6: streamcluster_simmedium_t32_snappy1 at 2024-04-15 22:19:55.717104 ...
-9.763 1
-18.239 2
-26.587000000000003 3
-35.358000000000004 4
-45.002 5
-running 7: streamcluster_simmedium_t64_snappy1 at 2024-04-15 22:21:01.773607 ...
-17.994 1
-38.385999999999996 2
-58.980999999999995 3
-72.526 4
-91.04899999999999 5
-Finished saving streamcluster_simmedium_snappy1 result.
-running 0: streamcluster_simlarge_t1_snappy1 at 2024-04-15 22:22:57.079995 ...
-3.546 1
-7.116 2
+running 1: blackscholes_simlarge_t1_crunchy1 at 2024-04-16 00:17:56.094200 ...
+2.158 1
+4.263 2
+6.675 3
+8.907 4
+11.105 5
+running 2: blackscholes_simlarge_t2_crunchy1 at 2024-04-16 00:18:31.940479 ...
+1.203 1
+2.5090000000000003 2
+3.705 3
+4.888 4
+6.1259999999999994 5
+running 3: blackscholes_simlarge_t4_crunchy1 at 2024-04-16 00:19:02.805415 ...
+0.72 1
+1.5539999999999998 2
+2.304 3
+3.038 4
+3.767 5
+running 4: blackscholes_simlarge_t8_crunchy1 at 2024-04-16 00:19:31.226542 ...
+0.561 1
+1.0630000000000002 2
+1.5670000000000002 3
+2.115 4
+2.652 5
+running 5: blackscholes_simlarge_t16_crunchy1 at 2024-04-16 00:19:58.583722 ...
+0.418 1
+0.8089999999999999 2
+1.213 3
+1.6260000000000001 4
+2.0420000000000003 5
+running 6: blackscholes_simlarge_t32_crunchy1 at 2024-04-16 00:20:25.381382 ...
+0.335 1
+0.673 2
+1.028 3
+1.367 4
+1.708 5
+running 7: blackscholes_simlarge_t64_crunchy1 at 2024-04-16 00:20:51.855816 ...
+0.322 1
+0.642 2
+0.9550000000000001 3
+1.2730000000000001 4
+1.6010000000000002 5
+running 8: blackscholes_simlarge_t128_crunchy1 at 2024-04-16 00:21:18.162732 ...
+0.315 1
+0.633 2
+0.952 3
+1.268 4
+1.587 5
+Finished saving blackscholes_simlarge_crunchy1 result.
+-----bodytrack (2/8)-----
+running 0: bodytrack_simsmall_t1_crunchy1 at 2024-04-16 00:21:47.403229 ...
+0.63 1
+1.127 2
 finishing cold start
-running 1: streamcluster_simlarge_t1_snappy1 at 2024-04-15 22:23:09.340339 ...
-3.723 1
-7.242 2
-10.748 3
-14.318999999999999 4
-17.881999999999998 5
-running 2: streamcluster_simlarge_t2_snappy1 at 2024-04-15 22:23:48.235670 ...
-1.956 1
-3.907 2
-5.869 3
-7.806 4
-9.725999999999999 5
-running 3: streamcluster_simlarge_t4_snappy1 at 2024-04-15 22:24:18.941235 ...
-1.316 1
-2.615 2
-3.9320000000000004 3
-5.199 4
-6.516 5
-running 4: streamcluster_simlarge_t8_snappy1 at 2024-04-15 22:24:46.401322 ...
-0.963 1
-1.9969999999999999 2
-3.022 3
-4.077999999999999 4
-5.1339999999999995 5
-running 5: streamcluster_simlarge_t16_snappy1 at 2024-04-15 22:25:12.542891 ...
-1.226 1
-2.3810000000000002 2
-3.5140000000000002 3
-5.231 4
-6.336 5
-running 6: streamcluster_simlarge_t32_snappy1 at 2024-04-15 22:25:39.901095 ...
-12.158 1
-24.043999999999997 2
-32.452999999999996 3
-44.538 4
-53.333 5
-running 7: streamcluster_simlarge_t64_snappy1 at 2024-04-15 22:26:54.345292 ...
-17.001 1
-42.299 2
-65.178 3
-90.354 4
-112.805 5
-Finished saving streamcluster_simlarge_snappy1 result.
------freqmine (8/8)-----
-running 0: freqmine_simsmall_t1_snappy1 at 2024-04-15 22:29:10.979254 ...
-0.438 1
-0.935 2
-finishing cold start
-running 1: freqmine_simsmall_t1_snappy1 at 2024-04-15 22:29:17.450447 ...
-0.485 1
-0.989 2
-1.472 3
-1.909 4
-2.447 5
-running 2: freqmine_simsmall_t2_snappy1 at 2024-04-15 22:29:41.716926 ...
-0.341 1
+running 1: bodytrack_simsmall_t1_crunchy1 at 2024-04-16 00:21:55.443505 ...
+0.503 1
+1.0150000000000001 2
+1.5260000000000002 3
+2.0490000000000004 4
+2.5520000000000005 5
+running 2: bodytrack_simsmall_t2_crunchy1 at 2024-04-16 00:22:23.144527 ...
+0.329 1
 0.659 2
-1.009 3
-1.414 4
-1.8359999999999999 5
-running 3: freqmine_simsmall_t4_snappy1 at 2024-04-15 22:30:06.174057 ...
-0.271 1
-0.53 2
-0.754 3
-1.038 4
-1.2890000000000001 5
-running 4: freqmine_simsmall_t8_snappy1 at 2024-04-15 22:30:29.915608 ...
-0.222 1
-0.398 2
-0.5900000000000001 3
-0.7930000000000001 4
-0.9860000000000002 5
-running 5: freqmine_simsmall_t16_snappy1 at 2024-04-15 22:30:53.701614 ...
-0.175 1
-0.395 2
-0.5820000000000001 3
-0.7420000000000001 4
-0.9670000000000001 5
-running 6: freqmine_simsmall_t32_snappy1 at 2024-04-15 22:31:17.295761 ...
-0.261 1
-0.457 2
-0.7210000000000001 3
-0.905 4
-1.101 5
-running 7: freqmine_simsmall_t64_snappy1 at 2024-04-15 22:31:41.681095 ...
-0.364 1
-0.605 2
-0.8999999999999999 3
-1.251 4
-1.5259999999999998 5
-running 8: freqmine_simsmall_t128_snappy1 at 2024-04-15 22:32:06.671631 ...
-0.344 1
-0.71 2
-1.051 3
-1.52 4
-1.935 5
-Finished saving freqmine_simsmall_snappy1 result.
-running 0: freqmine_simmedium_t1_snappy1 at 2024-04-15 22:32:34.653111 ...
-1.567 1
-3.151 2
+0.9970000000000001 3
+1.322 4
+1.657 5
+running 3: bodytrack_simsmall_t4_crunchy1 at 2024-04-16 00:22:50.028170 ...
+0.24 1
+0.477 2
+0.73 3
+0.973 4
+1.216 5
+running 4: bodytrack_simsmall_t8_crunchy1 at 2024-04-16 00:23:16.438279 ...
+0.203 1
+0.41000000000000003 2
+0.613 3
+0.8109999999999999 4
+1.017 5
+running 5: bodytrack_simsmall_t16_crunchy1 at 2024-04-16 00:23:42.612525 ...
+0.193 1
+0.378 2
+0.565 3
+0.7629999999999999 4
+0.9469999999999998 5
+running 6: bodytrack_simsmall_t32_crunchy1 at 2024-04-16 00:24:08.807219 ...
+0.193 1
+0.389 2
+0.581 3
+0.7809999999999999 4
+0.9769999999999999 5
+running 7: bodytrack_simsmall_t64_crunchy1 at 2024-04-16 00:24:34.861900 ...
+0.208 1
+0.418 2
+0.633 3
+0.843 4
+1.056 5
+running 8: bodytrack_simsmall_t128_crunchy1 at 2024-04-16 00:25:01.042951 ...
+0.257 1
+0.51 2
+0.794 3
+1.066 4
+1.324 5
+Finished saving bodytrack_simsmall_crunchy1 result.
+running 0: bodytrack_simmedium_t1_crunchy1 at 2024-04-16 00:25:30.969711 ...
+1.453 1
+2.927 2
 finishing cold start
-running 1: freqmine_simmedium_t1_snappy1 at 2024-04-15 22:32:43.981059 ...
-1.682 1
-3.234 2
-4.759 3
-6.276 4
-7.899 5
-running 2: freqmine_simmedium_t2_snappy1 at 2024-04-15 22:33:15.251762 ...
-1.083 1
-2.073 2
-3.01 3
-3.917 4
-4.89 5
-running 3: freqmine_simmedium_t4_snappy1 at 2024-04-15 22:33:42.854496 ...
-0.669 1
-1.299 2
-1.926 3
-2.541 4
-3.231 5
-running 4: freqmine_simmedium_t8_snappy1 at 2024-04-15 22:34:08.942251 ...
-0.58 1
-1.1829999999999998 2
-1.7119999999999997 3
-2.2529999999999997 4
-2.7669999999999995 5
-running 5: freqmine_simmedium_t16_snappy1 at 2024-04-15 22:34:34.789116 ...
-0.567 1
-1.077 2
-1.576 3
-2.037 4
-2.5629999999999997 5
-running 6: freqmine_simmedium_t32_snappy1 at 2024-04-15 22:35:00.049251 ...
-0.595 1
-1.103 2
-1.587 3
-2.199 4
-2.641 5
-running 7: freqmine_simmedium_t64_snappy1 at 2024-04-15 22:35:25.534116 ...
-0.571 1
-1.162 2
-1.7289999999999999 3
-2.3169999999999997 4
-2.896 5
-running 8: freqmine_simmedium_t128_snappy1 at 2024-04-15 22:35:51.210065 ...
-0.714 1
-1.408 2
-2.163 3
-2.811 4
-3.4539999999999997 5
-Finished saving freqmine_simmedium_snappy1 result.
-running 0: freqmine_simlarge_t1_snappy1 at 2024-04-15 22:36:20.088627 ...
-5.067 1
-10.094000000000001 2
+running 1: bodytrack_simmedium_t1_crunchy1 at 2024-04-16 00:25:40.729314 ...
+1.476 1
+2.935 2
+4.385 3
+5.824 4
+7.265 5
+running 2: bodytrack_simmedium_t2_crunchy1 at 2024-04-16 00:26:13.501384 ...
+0.863 1
+1.7029999999999998 2
+2.5519999999999996 3
+3.3949999999999996 4
+4.234 5
+running 3: bodytrack_simmedium_t4_crunchy1 at 2024-04-16 00:26:43.266738 ...
+0.545 1
+1.088 2
+1.6320000000000001 3
+2.1750000000000003 4
+2.72 5
+running 4: bodytrack_simmedium_t8_crunchy1 at 2024-04-16 00:27:11.516108 ...
+0.409 1
+0.8109999999999999 2
+1.2249999999999999 3
+1.625 4
+2.029 5
+running 5: bodytrack_simmedium_t16_crunchy1 at 2024-04-16 00:27:39.026067 ...
+0.339 1
+0.6910000000000001 2
+1.032 3
+1.374 4
+1.717 5
+running 6: bodytrack_simmedium_t32_crunchy1 at 2024-04-16 00:28:06.216958 ...
+0.329 1
+0.662 2
+0.9870000000000001 3
+1.32 4
+1.645 5
+running 7: bodytrack_simmedium_t64_crunchy1 at 2024-04-16 00:28:33.266558 ...
+0.359 1
+0.72 2
+1.0779999999999998 3
+1.4349999999999998 4
+1.7889999999999997 5
+running 8: bodytrack_simmedium_t128_crunchy1 at 2024-04-16 00:29:00.493433 ...
+0.401 1
+0.8380000000000001 2
+1.266 3
+1.674 4
+2.093 5
+Finished saving bodytrack_simmedium_crunchy1 result.
+running 0: bodytrack_simlarge_t1_crunchy1 at 2024-04-16 00:29:31.010371 ...
+4.803 1
+9.613 2
 finishing cold start
-running 1: freqmine_simlarge_t1_snappy1 at 2024-04-15 22:36:36.867902 ...
-5.071 1
-10.015 2
-15.032 3
-19.983 4
-25.044 5
-running 2: freqmine_simlarge_t2_snappy1 at 2024-04-15 22:37:26.038128 ...
-2.959 1
-6.0600000000000005 2
-8.950000000000001 3
-12.009 4
-15.034 5
-running 3: freqmine_simlarge_t4_snappy1 at 2024-04-15 22:38:04.625401 ...
-1.705 1
-3.3230000000000004 2
-5.018000000000001 3
-6.708 4
-8.451 5
-running 4: freqmine_simlarge_t8_snappy1 at 2024-04-15 22:38:36.843931 ...
-1.258 1
-2.548 2
-3.912 3
-5.189 4
-6.479 5
-running 5: freqmine_simlarge_t16_snappy1 at 2024-04-15 22:39:07.186626 ...
-1.152 1
-2.269 2
-3.356 3
-4.464 4
-5.683000000000001 5
-running 6: freqmine_simlarge_t32_snappy1 at 2024-04-15 22:39:36.665644 ...
-1.2 1
-2.4699999999999998 2
-3.667 3
-4.869 4
-6.0169999999999995 5
-running 7: freqmine_simlarge_t64_snappy1 at 2024-04-15 22:40:06.492984 ...
-1.289 1
-2.5869999999999997 2
-3.8579999999999997 3
-5.199999999999999 4
-6.539999999999999 5
-running 8: freqmine_simlarge_t128_snappy1 at 2024-04-15 22:40:36.976469 ...
-1.303 1
-2.667 2
-4.148 3
-5.494999999999999 4
-6.976999999999999 5
-Finished saving freqmine_simlarge_snappy1 result.
+running 1: bodytrack_simlarge_t1_crunchy1 at 2024-04-16 00:29:47.695500 ...
+4.789 1
+9.579 2
+14.446000000000002 3
+19.235 4
+24.032 5
+running 2: bodytrack_simlarge_t2_crunchy1 at 2024-04-16 00:30:37.945447 ...
+2.664 1
+5.316000000000001 2
+7.945 3
+10.588000000000001 4
+13.219000000000001 5
+running 3: bodytrack_simlarge_t4_crunchy1 at 2024-04-16 00:31:17.425911 ...
+1.565 1
+3.129 2
+4.684 3
+6.2540000000000004 4
+7.814 5
+running 4: bodytrack_simlarge_t8_crunchy1 at 2024-04-16 00:31:52.129757 ...
+1.045 1
+2.07 2
+3.1209999999999996 3
+4.207 4
+5.253 5
+running 5: bodytrack_simlarge_t16_crunchy1 at 2024-04-16 00:32:24.036427 ...
+0.777 1
+1.5710000000000002 2
+2.395 3
+3.19 4
+3.985 5
+running 6: bodytrack_simlarge_t32_crunchy1 at 2024-04-16 00:32:54.326799 ...
+0.698 1
+1.395 2
+2.133 3
+2.825 4
+3.52 5
+running 7: bodytrack_simlarge_t64_crunchy1 at 2024-04-16 00:33:24.350904 ...
+0.719 1
+1.4409999999999998 2
+2.1609999999999996 3
+2.8679999999999994 4
+3.5619999999999994 5
+running 8: bodytrack_simlarge_t128_crunchy1 at 2024-04-16 00:33:54.108683 ...
+0.928 1
+1.799 2
+2.65 3
+3.554 4
+4.396 5
+Finished saving bodytrack_simlarge_crunchy1 result.
+-----facesim (3/8)-----
+running 0: facesim_simsmall_t1_crunchy1 at 2024-04-16 00:34:28.532811 ...
+9.341 1
+18.704 2
+finishing cold start
+running 1: facesim_simsmall_t1_crunchy1 at 2024-04-16 00:34:58.029611 ...
+9.299 1
+19.430999999999997 2
+28.696999999999996 3
+38.053 4
+47.808 5
+running 2: facesim_simsmall_t2_crunchy1 at 2024-04-16 00:36:20.477871 ...
+6.816 1
+13.697 2
+20.671999999999997 3
+27.633999999999997 4
+34.483 5
+running 3: facesim_simsmall_t4_crunchy1 at 2024-04-16 00:37:29.730178 ...
+5.212 1
+10.388 2
+15.707 3
+20.909 4
+26.174 5
+running 4: facesim_simsmall_t8_crunchy1 at 2024-04-16 00:38:29.906860 ...
+4.659 1
+9.248000000000001 2
+13.876000000000001 3
+18.467000000000002 4
+23.167 5
+running 5: facesim_simsmall_t16_crunchy1 at 2024-04-16 00:39:27.120364 ...
+4.537 1
+8.993 2
+13.452 3
+17.928 4
+22.242 5
+running 6: facesim_simsmall_t32_crunchy1 at 2024-04-16 00:40:23.899912 ...
+4.66 1
+9.382000000000001 2
+14.012 3
+18.857 4
+23.533 5
+running 7: facesim_simsmall_t64_crunchy1 at 2024-04-16 00:41:21.981110 ...
+5.377 1
+10.686 2
+16.012 3
+21.364 4
+26.68 5
+running 8: facesim_simsmall_t128_crunchy1 at 2024-04-16 00:42:22.837577 ...
+6.935 1
+13.896 2
+20.831 3
+27.658 4
+34.586 5
+Finished saving facesim_simsmall_crunchy1 result.
+running 0: facesim_simmedium_t1_crunchy1 at 2024-04-16 00:43:34.609637 ...
+9.362 1
+18.668 2
+finishing cold start
+running 1: facesim_simmedium_t1_crunchy1 at 2024-04-16 00:44:03.558607 ...
+9.273 1
+18.912 2
+28.141 3
+37.513 4
+46.744 5
+running 2: facesim_simmedium_t2_crunchy1 at 2024-04-16 00:45:24.420479 ...
+6.938 1
+13.995999999999999 2
+21.116999999999997 3
+28.427999999999997 4
+35.533 5
+running 3: facesim_simmedium_t4_crunchy1 at 2024-04-16 00:46:34.496946 ...
+5.211 1
+10.418 2
+15.661999999999999 3
+21.04 4
+26.247999999999998 5
+running 4: facesim_simmedium_t8_crunchy1 at 2024-04-16 00:47:35.733005 ...
+4.575 1
+9.222000000000001 2
+14.046000000000001 3
+18.701 4
+23.337 5
+running 5: facesim_simmedium_t16_crunchy1 at 2024-04-16 00:48:34.317370 ...
+4.444 1
+9.235 2
+13.738 3
+18.085 4
+22.537 5
+running 6: facesim_simmedium_t32_crunchy1 at 2024-04-16 00:49:31.725367 ...
+4.722 1
+9.439 2
+14.199 3
+18.941 4
+23.619 5
+running 7: facesim_simmedium_t64_crunchy1 at 2024-04-16 00:50:29.227100 ...
+5.491 1
+11.113 2
+16.713 3
+22.056 4
+27.402 5
+running 8: facesim_simmedium_t128_crunchy1 at 2024-04-16 00:51:30.700607 ...
+6.756 1
+13.609 2
+20.544 3
+27.443 4
+34.418 5
+Finished saving facesim_simmedium_crunchy1 result.
+running 0: facesim_simlarge_t1_crunchy1 at 2024-04-16 00:52:42.189903 ...
+9.453 1
+18.902 2
+finishing cold start
+running 1: facesim_simlarge_t1_crunchy1 at 2024-04-16 00:53:11.318508 ...
+9.932 1
+19.57 2
+28.740000000000002 3
+38.981 4
+48.717 5
+running 2: facesim_simlarge_t2_crunchy1 at 2024-04-16 00:54:33.967623 ...
+7.039 1
+14.003 2
+20.679000000000002 3
+27.649 4
+34.652 5
+running 3: facesim_simlarge_t4_crunchy1 at 2024-04-16 00:55:42.730435 ...
+5.304 1
+10.609 2
+15.978 3
+21.24 4
+26.477999999999998 5
+running 4: facesim_simlarge_t8_crunchy1 at 2024-04-16 00:56:43.365696 ...
+4.623 1
+9.204 2
+13.827000000000002 3
+18.380000000000003 4
+22.989000000000004 5
+running 5: facesim_simlarge_t16_crunchy1 at 2024-04-16 00:57:40.121604 ...
+4.487 1
+8.939 2
+13.418 3
+17.871 4
+22.316 5
+running 6: facesim_simlarge_t32_crunchy1 at 2024-04-16 00:58:36.910030 ...
+4.829 1
+9.646 2
+14.419 3
+19.17 4
+23.939 5
+running 7: facesim_simlarge_t64_crunchy1 at 2024-04-16 00:59:35.281434 ...
+5.525 1
+10.859 2
+16.346 3
+21.777 4
+27.239 5
+running 8: facesim_simlarge_t128_crunchy1 at 2024-04-16 01:00:36.525706 ...
+7.073 1
+14.099 2
+21.091 3
+28.111 4
+34.986000000000004 5
+Finished saving facesim_simlarge_crunchy1 result.
+-----fluidanimate (4/8)-----
+running 0: fluidanimate_simsmall_t1_crunchy1 at 2024-04-16 01:01:48.671463 ...
+0.601 1
+1.204 2
+finishing cold start
+running 1: fluidanimate_simsmall_t1_crunchy1 at 2024-04-16 01:01:56.360515 ...
+0.605 1
+1.205 2
+1.814 3
+2.42 4
+3.022 5
+running 2: fluidanimate_simsmall_t2_crunchy1 at 2024-04-16 01:02:23.866250 ...
+0.407 1
+0.8109999999999999 2
+1.2209999999999999 3
+1.628 4
+2.032 5
+running 3: fluidanimate_simsmall_t4_crunchy1 at 2024-04-16 01:02:50.470532 ...
+0.301 1
+0.601 2
+0.9059999999999999 3
+1.214 4
+1.52 5
+running 4: fluidanimate_simsmall_t8_crunchy1 at 2024-04-16 01:03:16.614109 ...
+0.276 1
+0.5609999999999999 2
+0.835 3
+1.126 4
+1.424 5
+running 5: fluidanimate_simsmall_t16_crunchy1 at 2024-04-16 01:03:42.638998 ...
+0.304 1
+0.606 2
+0.909 3
+1.215 4
+1.518 5
+running 6: fluidanimate_simsmall_t32_crunchy1 at 2024-04-16 01:04:08.849215 ...
+0.376 1
+0.77 2
+1.175 3
+1.588 4
+2.012 5
+running 7: fluidanimate_simsmall_t64_crunchy1 at 2024-04-16 01:04:35.455590 ...
+0.61 1
+1.237 2
+1.831 3
+2.433 4
+3.037 5
+running 8: fluidanimate_simsmall_t128_crunchy1 at 2024-04-16 01:05:03.157229 ...
+0.963 1
+1.943 2
+2.912 3
+3.875 4
+4.8629999999999995 5
+Finished saving fluidanimate_simsmall_crunchy1 result.
+running 0: fluidanimate_simmedium_t1_crunchy1 at 2024-04-16 01:05:35.612045 ...
+1.408 1
+2.787 2
+finishing cold start
+running 1: fluidanimate_simmedium_t1_crunchy1 at 2024-04-16 01:05:44.919587 ...
+1.397 1
+2.8120000000000003 2
+4.226 3
+5.614 4
+7.026 5
+running 2: fluidanimate_simmedium_t2_crunchy1 at 2024-04-16 01:06:16.682381 ...
+0.913 1
+1.815 2
+2.725 3
+3.6390000000000002 4
+4.548 5
+running 3: fluidanimate_simmedium_t4_crunchy1 at 2024-04-16 01:06:45.961611 ...
+0.632 1
+1.2610000000000001 2
+1.8880000000000001 3
+2.52 4
+3.1630000000000003 5
+running 4: fluidanimate_simmedium_t8_crunchy1 at 2024-04-16 01:07:13.818688 ...
+0.549 1
+1.098 2
+1.6440000000000001 3
+2.1750000000000003 4
+2.6990000000000003 5
+running 5: fluidanimate_simmedium_t16_crunchy1 at 2024-04-16 01:07:41.229548 ...
+0.508 1
+1.013 2
+1.504 3
+2.021 4
+2.5389999999999997 5
+running 6: fluidanimate_simmedium_t32_crunchy1 at 2024-04-16 01:08:08.491451 ...
+0.576 1
+1.164 2
+1.795 3
+2.3899999999999997 4
+2.9999999999999996 5
+running 7: fluidanimate_simmedium_t64_crunchy1 at 2024-04-16 01:08:36.676204 ...
+0.792 1
+1.729 2
+2.495 3
+3.3970000000000002 4
+4.182 5
+running 8: fluidanimate_simmedium_t128_crunchy1 at 2024-04-16 01:09:06.024572 ...
+1.153 1
+2.455 2
+3.635 3
+4.811999999999999 4
+5.949 5
+Finished saving fluidanimate_simmedium_crunchy1 result.
+running 0: fluidanimate_simlarge_t1_crunchy1 at 2024-04-16 01:09:40.745669 ...
+4.093 1
+8.181000000000001 2
+finishing cold start
+running 1: fluidanimate_simlarge_t1_crunchy1 at 2024-04-16 01:09:55.704781 ...
+4.028 1
+10.405999999999999 2
+14.471999999999998 3
+18.548 4
+22.711 5
+running 2: fluidanimate_simlarge_t2_crunchy1 at 2024-04-16 01:10:44.400159 ...
+2.708 1
+5.425000000000001 2
+8.118 3
+11.169 4
+13.891 5
+running 3: fluidanimate_simlarge_t4_crunchy1 at 2024-04-16 01:11:23.586447 ...
+1.776 1
+3.585 2
+5.611 3
+7.404 4
+9.188 5
+running 4: fluidanimate_simlarge_t8_crunchy1 at 2024-04-16 01:11:58.741139 ...
+1.429 1
+2.84 2
+4.317 3
+5.772 4
+7.202 5
+running 5: fluidanimate_simlarge_t16_crunchy1 at 2024-04-16 01:12:31.163217 ...
+1.332 1
+2.645 2
+3.9779999999999998 3
+5.276 4
+6.569 5
+running 6: fluidanimate_simlarge_t32_crunchy1 at 2024-04-16 01:13:03.913125 ...
+1.386 1
+2.7489999999999997 2
+4.138 3
+5.508 4
+7.013 5
+running 7: fluidanimate_simlarge_t64_crunchy1 at 2024-04-16 01:13:36.333087 ...
+1.535 1
+3.121 2
+4.824 3
+6.5009999999999994 4
+8.174999999999999 5
+running 8: fluidanimate_simlarge_t128_crunchy1 at 2024-04-16 01:14:11.176215 ...
+2.259 1
+4.42 2
+6.5649999999999995 3
+8.622 4
+11.113 5
+Finished saving fluidanimate_simlarge_crunchy1 result.
+-----swaptions (5/8)-----
+running 0: swaptions_simsmall_t1_crunchy1 at 2024-04-16 01:14:51.900328 ...
+0.759 1
+1.538 2
+finishing cold start
+running 1: swaptions_simsmall_t1_crunchy1 at 2024-04-16 01:14:59.950455 ...
+0.775 1
+1.548 2
+2.391 3
+3.149 4
+3.918 5
+running 2: swaptions_simsmall_t2_crunchy1 at 2024-04-16 01:15:28.999071 ...
+0.432 1
+0.831 2
+1.233 3
+1.6660000000000001 4
+2.0900000000000003 5
+running 3: swaptions_simsmall_t4_crunchy1 at 2024-04-16 01:15:55.848228 ...
+0.206 1
+0.426 2
+0.644 3
+0.865 4
+1.063 5
+running 4: swaptions_simsmall_t8_crunchy1 at 2024-04-16 01:16:21.595601 ...
+0.111 1
+0.226 2
+0.354 3
+0.46199999999999997 4
+0.575 5
+running 5: swaptions_simsmall_t16_crunchy1 at 2024-04-16 01:16:46.877208 ...
+0.065 1
+0.127 2
+0.188 3
+0.25 4
+0.312 5
+running 6: swaptions_simsmall_t32_crunchy1 at 2024-04-16 01:17:12.184046 ...
+0.007 1
+0.014 2
+0.021 3
+0.028 4
+0.035 5
+running 7: swaptions_simsmall_t64_crunchy1 at 2024-04-16 01:17:36.702721 ...
+0.007 1
+0.014 2
+0.021 3
+0.028 4
+0.035 5
+running 8: swaptions_simsmall_t128_crunchy1 at 2024-04-16 01:18:02.608854 ...
+0.007 1
+0.014 2
+0.021 3
+0.028 4
+0.035 5
+Finished saving swaptions_simsmall_crunchy1 result.
+running 0: swaptions_simmedium_t1_crunchy1 at 2024-04-16 01:18:30.658389 ...
+3.004 1
+5.9990000000000006 2
+finishing cold start
+running 1: swaptions_simmedium_t1_crunchy1 at 2024-04-16 01:18:43.030481 ...
+3.016 1
+6.022 2
+9.073 3
+12.149000000000001 4
+15.151 5
+running 2: swaptions_simmedium_t2_crunchy1 at 2024-04-16 01:19:23.537412 ...
+1.519 1
+3.101 2
+4.6259999999999994 3
+6.130999999999999 4
+7.704999999999999 5
+running 3: swaptions_simmedium_t4_crunchy1 at 2024-04-16 01:19:56.019615 ...
+0.774 1
+1.597 2
+2.386 3
+3.1510000000000002 4
+3.978 5
+running 4: swaptions_simmedium_t8_crunchy1 at 2024-04-16 01:20:24.333462 ...
+0.399 1
+0.788 2
+1.173 3
+1.593 4
+1.994 5
+running 5: swaptions_simmedium_t16_crunchy1 at 2024-04-16 01:20:50.630187 ...
+0.223 1
+0.443 2
+0.672 3
+0.894 4
+1.1 5
+running 6: swaptions_simmedium_t32_crunchy1 at 2024-04-16 01:21:16.307564 ...
+0.125 1
+0.251 2
+0.373 3
+0.498 4
+0.626 5
+running 7: swaptions_simmedium_t64_crunchy1 at 2024-04-16 01:21:41.251589 ...
+0.007 1
+0.014 2
+0.021 3
+0.028 4
+0.035 5
+running 8: swaptions_simmedium_t128_crunchy1 at 2024-04-16 01:22:05.610834 ...
+0.007 1
+0.014 2
+0.021 3
+0.028 4
+0.035 5
+Finished saving swaptions_simmedium_crunchy1 result.
+running 0: swaptions_simlarge_t1_crunchy1 at 2024-04-16 01:22:33.352180 ...
+11.966 1
+23.926000000000002 2
+finishing cold start
+running 1: swaptions_simlarge_t1_crunchy1 at 2024-04-16 01:23:03.653953 ...
+11.938 1
+23.894 2
+35.83 3
+49.062 4
+61.179 5
+running 2: swaptions_simlarge_t2_crunchy1 at 2024-04-16 01:24:30.126814 ...
+6.0 1
+12.298 2
+18.294 3
+24.309 4
+30.310000000000002 5
+running 3: swaptions_simlarge_t4_crunchy1 at 2024-04-16 01:25:25.660266 ...
+3.001 1
+6.122999999999999 2
+9.189 3
+12.565999999999999 4
+15.572 5
+running 4: swaptions_simlarge_t8_crunchy1 at 2024-04-16 01:26:06.956426 ...
+1.528 1
+3.073 2
+4.591 3
+6.102 4
+7.622 5
+running 5: swaptions_simlarge_t16_crunchy1 at 2024-04-16 01:26:40.168676 ...
+0.858 1
+1.633 2
+2.482 3
+3.269 4
+4.069 5
+running 6: swaptions_simlarge_t32_crunchy1 at 2024-04-16 01:27:08.681145 ...
+0.463 1
+0.913 2
+1.366 3
+1.822 4
+2.2760000000000002 5
+running 7: swaptions_simlarge_t64_crunchy1 at 2024-04-16 01:27:35.691651 ...
+0.301 1
+0.583 2
+0.869 3
+1.147 4
+1.417 5
+running 8: swaptions_simlarge_t128_crunchy1 at 2024-04-16 01:28:01.793013 ...
+0.007 1
+0.014 2
+0.022 3
+0.028999999999999998 4
+0.036 5
+Finished saving swaptions_simlarge_crunchy1 result.
+-----canneal (6/8)-----
+running 0: canneal_simsmall_t1_crunchy1 at 2024-04-16 01:28:29.497577 ...
+3.358 1
+6.856 2
+finishing cold start
+running 1: canneal_simsmall_t1_crunchy1 at 2024-04-16 01:28:43.030560 ...
+3.567 1
+6.961 2
+10.634 3
+14.137 4
+17.709 5
+running 2: canneal_simsmall_t2_crunchy1 at 2024-04-16 01:29:25.477792 ...
+3.167 1
+6.295 2
+9.498 3
+12.809999999999999 4
+15.982999999999999 5
+running 3: canneal_simsmall_t4_crunchy1 at 2024-04-16 01:30:07.000719 ...
+2.894 1
+5.656000000000001 2
+8.542000000000002 3
+11.293000000000001 4
+14.197000000000001 5
+running 4: canneal_simsmall_t8_crunchy1 at 2024-04-16 01:30:46.346538 ...
+2.712 1
+5.536 2
+8.365 3
+11.385 4
+14.055 5
+running 5: canneal_simsmall_t16_crunchy1 at 2024-04-16 01:31:26.610074 ...
+2.733 1
+5.351 2
+8.094 3
+10.677999999999999 4
+13.402 5
+running 6: canneal_simsmall_t32_crunchy1 at 2024-04-16 01:32:04.669609 ...
+2.679 1
+5.308999999999999 2
+7.857999999999999 3
+10.407999999999998 4
+12.956999999999997 5
+running 7: canneal_simsmall_t64_crunchy1 at 2024-04-16 01:32:42.654877 ...
+2.649 1
+5.2010000000000005 2
+7.932 3
+10.595 4
+13.294 5
+running 8: canneal_simsmall_t128_crunchy1 at 2024-04-16 01:33:21.402886 ...
+2.67 1
+5.274 2
+7.872 3
+10.594999999999999 4
+13.230999999999998 5
+Finished saving canneal_simsmall_crunchy1 result.
+running 0: canneal_simmedium_t1_crunchy1 at 2024-04-16 01:34:02.652011 ...
+9.415 1
+18.162999999999997 2
+finishing cold start
+running 1: canneal_simmedium_t1_crunchy1 at 2024-04-16 01:34:28.712136 ...
+8.765 1
+17.533 2
+26.813000000000002 3
+36.113 4
+45.33 5
+running 2: canneal_simmedium_t2_crunchy1 at 2024-04-16 01:35:39.396372 ...
+7.23 1
+14.404 2
+21.497 3
+28.662 4
+35.85 5
+running 3: canneal_simmedium_t4_crunchy1 at 2024-04-16 01:36:41.527681 ...
+6.808 1
+13.522 2
+20.599 3
+27.463 4
+33.85 5
+running 4: canneal_simmedium_t8_crunchy1 at 2024-04-16 01:37:40.652412 ...
+6.392 1
+12.409 2
+18.428 3
+24.938000000000002 4
+30.865000000000002 5
+running 5: canneal_simmedium_t16_crunchy1 at 2024-04-16 01:38:36.922784 ...
+5.725 1
+11.329 2
+17.501 3
+23.649 4
+29.196 5
+running 6: canneal_simmedium_t32_crunchy1 at 2024-04-16 01:39:33.104599 ...
+6.253 1
+12.448 2
+18.453 3
+24.445 4
+30.802 5
+running 7: canneal_simmedium_t64_crunchy1 at 2024-04-16 01:40:30.033480 ...
+5.704 1
+11.27 2
+17.497 3
+23.806 4
+29.813000000000002 5
+running 8: canneal_simmedium_t128_crunchy1 at 2024-04-16 01:41:24.869376 ...
+6.168 1
+12.280000000000001 2
+18.463 3
+25.002000000000002 4
+31.127000000000002 5
+Finished saving canneal_simmedium_crunchy1 result.
+running 0: canneal_simlarge_t1_crunchy1 at 2024-04-16 01:42:24.533226 ...
+20.0 1
+41.251000000000005 2
+finishing cold start
+running 1: canneal_simlarge_t1_crunchy1 at 2024-04-16 01:43:12.594864 ...
+20.13 1
+40.738 2
+59.717 3
+79.92 4
+99.638 5
+running 2: canneal_simlarge_t2_crunchy1 at 2024-04-16 01:45:17.879481 ...
+16.596 1
+33.601 2
+49.884 3
+67.435 4
+83.775 5
+running 3: canneal_simlarge_t4_crunchy1 at 2024-04-16 01:47:07.770034 ...
+13.726 1
+27.426000000000002 2
+41.047000000000004 3
+55.02 4
+68.787 5
+running 4: canneal_simlarge_t8_crunchy1 at 2024-04-16 01:48:42.263552 ...
+13.503 1
+26.621000000000002 2
+40.259 3
+53.317 4
+66.137 5
+running 5: canneal_simlarge_t16_crunchy1 at 2024-04-16 01:50:15.759151 ...
+12.035 1
+25.006999999999998 2
+37.193 3
+49.462999999999994 4
+61.61599999999999 5
+running 6: canneal_simlarge_t32_crunchy1 at 2024-04-16 01:51:44.292445 ...
+13.097 1
+25.465 2
+37.257999999999996 3
+49.193999999999996 4
+61.477 5
+running 7: canneal_simlarge_t64_crunchy1 at 2024-04-16 01:53:12.202376 ...
+11.854 1
+24.558 2
+37.507 3
+49.439 4
+61.456 5
+running 8: canneal_simlarge_t128_crunchy1 at 2024-04-16 01:54:39.442080 ...
+13.389 1
+26.128 2
+39.236000000000004 3
+51.08200000000001 4
+62.92800000000001 5
+Finished saving canneal_simlarge_crunchy1 result.
+-----streamcluster (7/8)-----
+running 0: streamcluster_simsmall_t1_crunchy1 at 2024-04-16 01:56:12.692628 ...
+0.398 1
+0.797 2
+finishing cold start
+running 1: streamcluster_simsmall_t1_crunchy1 at 2024-04-16 01:56:20.351577 ...
+0.398 1
+0.795 2
+1.1920000000000002 3
+1.5900000000000003 4
+1.9880000000000004 5
+running 2: streamcluster_simsmall_t2_crunchy1 at 2024-04-16 01:56:47.474928 ...
+0.253 1
+0.496 2
+0.747 3
+0.999 4
+1.252 5
+running 3: streamcluster_simsmall_t4_crunchy1 at 2024-04-16 01:57:14.088703 ...
+0.279 1
+0.553 2
+0.855 3
+1.177 4
+1.4180000000000001 5
+running 4: streamcluster_simsmall_t8_crunchy1 at 2024-04-16 01:57:40.659312 ...
+0.539 1
+1.1280000000000001 2
+1.649 3
+2.358 4
+2.9130000000000003 5
+running 5: streamcluster_simsmall_t16_crunchy1 at 2024-04-16 01:58:09.658573 ...
+0.991 1
+1.959 2
+2.943 3
+4.145 4
+5.1659999999999995 5
+running 6: streamcluster_simsmall_t32_crunchy1 at 2024-04-16 01:58:39.845750 ...
+4.396 1
+8.225999999999999 2
+11.882 3
+15.661 4
+18.746 5
+running 7: streamcluster_simsmall_t64_crunchy1 at 2024-04-16 01:59:24.079864 ...
+37.013 1
+86.297 2
+121.487 3
+171.253 4
+217.53499999999997 5
+Finished saving streamcluster_simsmall_crunchy1 result.
+running 0: streamcluster_simmedium_t1_crunchy1 at 2024-04-16 02:03:32.774934 ...
+1.901 1
+3.8 2
+finishing cold start
+running 1: streamcluster_simmedium_t1_crunchy1 at 2024-04-16 02:03:43.365834 ...
+1.902 1
+3.835 2
+5.746 3
+7.654 4
+9.654 5
+running 2: streamcluster_simmedium_t2_crunchy1 at 2024-04-16 02:04:18.735448 ...
+0.995 1
+1.984 2
+2.974 3
+3.978 4
+5.037 5
+running 3: streamcluster_simmedium_t4_crunchy1 at 2024-04-16 02:04:49.351078 ...
+0.698 1
+1.414 2
+2.1189999999999998 3
+2.836 4
+3.5669999999999997 5
+running 4: streamcluster_simmedium_t8_crunchy1 at 2024-04-16 02:05:17.990488 ...
+0.868 1
+1.756 2
+2.551 3
+3.454 4
+4.272 5
+running 5: streamcluster_simmedium_t16_crunchy1 at 2024-04-16 02:05:46.980847 ...
+1.649 1
+3.0540000000000003 2
+4.481 3
+5.915 4
+7.321 5
+running 6: streamcluster_simmedium_t32_crunchy1 at 2024-04-16 02:06:19.485570 ...
+4.462 1
+8.947 2
+12.792 3
+17.054 4
+21.494999999999997 5
+running 7: streamcluster_simmedium_t64_crunchy1 at 2024-04-16 02:07:06.110616 ...
+54.532 1
+106.69399999999999 2
+159.84799999999998 3
+201.47899999999998 4
+256.756 5
+Finished saving streamcluster_simmedium_crunchy1 result.
+running 0: streamcluster_simlarge_t1_crunchy1 at 2024-04-16 02:11:51.953970 ...
+9.952 1
+20.159 2
+finishing cold start
+running 1: streamcluster_simlarge_t1_crunchy1 at 2024-04-16 02:12:18.750395 ...
+10.216 1
+20.423000000000002 2
+30.413000000000004 3
+40.901 4
+50.853 5
+running 2: streamcluster_simlarge_t2_crunchy1 at 2024-04-16 02:13:34.671911 ...
+5.081 1
+10.22 2
+15.367 3
+20.444000000000003 4
+25.650000000000002 5
+running 3: streamcluster_simlarge_t4_crunchy1 at 2024-04-16 02:14:25.484257 ...
+3.077 1
+6.053 2
+9.136 3
+12.224 4
+15.306000000000001 5
+running 4: streamcluster_simlarge_t8_crunchy1 at 2024-04-16 02:15:06.604657 ...
+2.185 1
+4.317 2
+6.455 3
+8.515 4
+10.677 5
+running 5: streamcluster_simlarge_t16_crunchy1 at 2024-04-16 02:15:42.663346 ...
+2.568 1
+4.890000000000001 2
+7.19 3
+9.384 4
+11.652000000000001 5
+running 6: streamcluster_simlarge_t32_crunchy1 at 2024-04-16 02:16:20.262386 ...
+5.918 1
+11.751000000000001 2
+18.491 3
+24.999 4
+31.035999999999998 5
+running 7: streamcluster_simlarge_t64_crunchy1 at 2024-04-16 02:17:16.835709 ...
+69.763 1
+121.421 2
+173.627 3
+239.633 4
+306.323 5
+Finished saving streamcluster_simlarge_crunchy1 result.
+-----freqmine (8/8)-----
+running 0: freqmine_simsmall_t1_crunchy1 at 2024-04-16 02:22:52.611090 ...
+0.937 1
+1.779 2
+finishing cold start
+running 1: freqmine_simsmall_t1_crunchy1 at 2024-04-16 02:23:01.711288 ...
+0.923 1
+1.763 2
+2.69 3
+3.529 4
+4.417 5
+running 2: freqmine_simsmall_t2_crunchy1 at 2024-04-16 02:23:32.066635 ...
+0.536 1
+1.082 2
+1.6720000000000002 3
+2.257 4
+2.861 5
+running 3: freqmine_simsmall_t4_crunchy1 at 2024-04-16 02:24:01.360201 ...
+0.378 1
+0.751 2
+1.151 3
+1.529 4
+1.894 5
+running 4: freqmine_simsmall_t8_crunchy1 at 2024-04-16 02:24:29.628640 ...
+0.312 1
+0.614 2
+0.933 3
+1.245 4
+1.5630000000000002 5
+running 5: freqmine_simsmall_t16_crunchy1 at 2024-04-16 02:24:57.037135 ...
+0.386 1
+0.6990000000000001 2
+1.018 3
+1.337 4
+1.7309999999999999 5
+running 6: freqmine_simsmall_t32_crunchy1 at 2024-04-16 02:25:24.891785 ...
+0.42 1
+0.796 2
+1.1600000000000001 3
+1.602 4
+2.0010000000000003 5
+running 7: freqmine_simsmall_t64_crunchy1 at 2024-04-16 02:25:52.938498 ...
+0.56 1
+1.138 2
+1.7079999999999997 3
+2.2909999999999995 4
+2.8569999999999993 5
+running 8: freqmine_simsmall_t128_crunchy1 at 2024-04-16 02:26:22.319783 ...
+0.899 1
+1.799 2
+2.718 3
+3.6109999999999998 4
+4.511 5
+Finished saving freqmine_simsmall_crunchy1 result.
+running 0: freqmine_simmedium_t1_crunchy1 at 2024-04-16 02:26:55.564703 ...
+3.203 1
+6.399 2
+finishing cold start
+running 1: freqmine_simmedium_t1_crunchy1 at 2024-04-16 02:27:09.017741 ...
+3.169 1
+6.482 2
+9.661 3
+12.869 4
+16.124 5
+running 2: freqmine_simmedium_t2_crunchy1 at 2024-04-16 02:27:51.966720 ...
+1.818 1
+3.601 2
+5.4719999999999995 3
+7.268999999999999 4
+9.052 5
+running 3: freqmine_simmedium_t4_crunchy1 at 2024-04-16 02:28:28.003465 ...
+1.075 1
+2.1630000000000003 2
+3.2840000000000003 3
+4.37 4
+5.484 5
+running 4: freqmine_simmedium_t8_crunchy1 at 2024-04-16 02:29:00.798233 ...
+0.903 1
+1.754 2
+2.6470000000000002 3
+3.5090000000000003 4
+4.362 5
+running 5: freqmine_simmedium_t16_crunchy1 at 2024-04-16 02:29:32.666736 ...
+0.855 1
+1.6869999999999998 2
+2.546 3
+3.4139999999999997 4
+4.25 5
+running 6: freqmine_simmedium_t32_crunchy1 at 2024-04-16 02:30:03.734012 ...
+0.917 1
+1.8530000000000002 2
+2.7700000000000005 3
+3.7510000000000003 4
+4.676 5
+running 7: freqmine_simmedium_t64_crunchy1 at 2024-04-16 02:30:35.170678 ...
+1.122 1
+2.212 2
+3.35 3
+4.448 4
+5.547000000000001 5
+running 8: freqmine_simmedium_t128_crunchy1 at 2024-04-16 02:31:07.550636 ...
+1.436 1
+2.911 2
+4.4 3
+5.882000000000001 4
+7.382000000000001 5
+Finished saving freqmine_simmedium_crunchy1 result.
+running 0: freqmine_simlarge_t1_crunchy1 at 2024-04-16 02:31:45.117840 ...
+11.32 1
+22.686 2
+finishing cold start
+running 1: freqmine_simlarge_t1_crunchy1 at 2024-04-16 02:32:16.209972 ...
+11.308 1
+22.581 2
+33.744 3
+45.122 4
+56.431 5
+running 2: freqmine_simlarge_t2_crunchy1 at 2024-04-16 02:33:40.832564 ...
+6.144 1
+12.205 2
+18.265 3
+24.312 4
+30.384 5
+running 3: freqmine_simlarge_t4_crunchy1 at 2024-04-16 02:34:38.716502 ...
+3.396 1
+6.82 2
+10.248000000000001 3
+13.675 4
+17.129 5
+running 4: freqmine_simlarge_t8_crunchy1 at 2024-04-16 02:35:24.336393 ...
+2.327 1
+4.659 2
+7.093 3
+9.469999999999999 4
+11.808 5
+running 5: freqmine_simlarge_t16_crunchy1 at 2024-04-16 02:36:05.127614 ...
+2.257 1
+4.553 2
+6.804 3
+9.026 4
+11.229 5
+running 6: freqmine_simlarge_t32_crunchy1 at 2024-04-16 02:36:46.454143 ...
+2.296 1
+4.542999999999999 2
+6.901999999999999 3
+9.221 4
+11.531 5
+running 7: freqmine_simlarge_t64_crunchy1 at 2024-04-16 02:37:27.749042 ...
+2.598 1
+5.1 2
+7.6739999999999995 3
+10.245999999999999 4
+12.77 5
+running 8: freqmine_simlarge_t128_crunchy1 at 2024-04-16 02:38:08.091697 ...
+2.817 1
+5.73 2
+8.524000000000001 3
+11.393 4
+14.307 5
+Finished saving freqmine_simlarge_crunchy1 result.
 ==================Run Rodinia (one csv per line)=====================
 -----bfs (1/3)-----
-running 0: bfs_simsmall_t1_snappy1 at 2024-04-15 22:41:09.915434 ...
+running 0: bfs_simsmall_t1_crunchy1 at 2024-04-16 02:38:53.883930 ...
 finishing cold start
-running 1: bfs_simsmall_t1_snappy1 at 2024-04-15 22:41:13.194775 ...
-running 2: bfs_simsmall_t2_snappy1 at 2024-04-15 22:41:29.655793 ...
-running 3: bfs_simsmall_t4_snappy1 at 2024-04-15 22:41:46.075633 ...
-running 4: bfs_simsmall_t8_snappy1 at 2024-04-15 22:42:02.515589 ...
-running 5: bfs_simsmall_t16_snappy1 at 2024-04-15 22:42:18.938102 ...
-running 6: bfs_simsmall_t32_snappy1 at 2024-04-15 22:42:35.356414 ...
-running 7: bfs_simsmall_t64_snappy1 at 2024-04-15 22:42:51.798128 ...
-running 8: bfs_simsmall_t128_snappy1 at 2024-04-15 22:43:08.268394 ...
-Finished saving bfs_simsmall_snappy1 result.
-running 0: bfs_simmedium_t1_snappy1 at 2024-04-15 22:43:27.650104 ...
+running 1: bfs_simsmall_t1_crunchy1 at 2024-04-16 02:38:57.060043 ...
+running 2: bfs_simsmall_t2_crunchy1 at 2024-04-16 02:39:13.285777 ...
+running 3: bfs_simsmall_t4_crunchy1 at 2024-04-16 02:39:29.462844 ...
+running 4: bfs_simsmall_t8_crunchy1 at 2024-04-16 02:39:45.972454 ...
+running 5: bfs_simsmall_t16_crunchy1 at 2024-04-16 02:40:02.171521 ...
+running 6: bfs_simsmall_t32_crunchy1 at 2024-04-16 02:40:19.107566 ...
+running 7: bfs_simsmall_t64_crunchy1 at 2024-04-16 02:40:35.488169 ...
+running 8: bfs_simsmall_t128_crunchy1 at 2024-04-16 02:40:51.955092 ...
+Finished saving bfs_simsmall_crunchy1 result.
+running 0: bfs_simmedium_t1_crunchy1 at 2024-04-16 02:41:14.274233 ...
 finishing cold start
-running 1: bfs_simmedium_t1_snappy1 at 2024-04-15 22:43:31.237733 ...
-running 2: bfs_simmedium_t2_snappy1 at 2024-04-15 22:43:48.321578 ...
-running 3: bfs_simmedium_t4_snappy1 at 2024-04-15 22:44:05.386794 ...
-running 4: bfs_simmedium_t8_snappy1 at 2024-04-15 22:44:22.403820 ...
-running 5: bfs_simmedium_t16_snappy1 at 2024-04-15 22:44:39.330635 ...
-running 6: bfs_simmedium_t32_snappy1 at 2024-04-15 22:44:56.357041 ...
-running 7: bfs_simmedium_t64_snappy1 at 2024-04-15 22:45:13.477479 ...
-running 8: bfs_simmedium_t128_snappy1 at 2024-04-15 22:45:30.724490 ...
-Finished saving bfs_simmedium_snappy1 result.
-running 0: bfs_simlarge_t1_snappy1 at 2024-04-15 22:45:50.551790 ...
+running 1: bfs_simmedium_t1_crunchy1 at 2024-04-16 02:41:17.816010 ...
+running 2: bfs_simmedium_t2_crunchy1 at 2024-04-16 02:41:35.068885 ...
+running 3: bfs_simmedium_t4_crunchy1 at 2024-04-16 02:41:52.176896 ...
+running 4: bfs_simmedium_t8_crunchy1 at 2024-04-16 02:42:09.734706 ...
+running 5: bfs_simmedium_t16_crunchy1 at 2024-04-16 02:42:26.823249 ...
+running 6: bfs_simmedium_t32_crunchy1 at 2024-04-16 02:42:44.348226 ...
+running 7: bfs_simmedium_t64_crunchy1 at 2024-04-16 02:43:01.492047 ...
+running 8: bfs_simmedium_t128_crunchy1 at 2024-04-16 02:43:18.681915 ...
+Finished saving bfs_simmedium_crunchy1 result.
+running 0: bfs_simlarge_t1_crunchy1 at 2024-04-16 02:43:39.575624 ...
 finishing cold start
-running 1: bfs_simlarge_t1_snappy1 at 2024-04-15 22:45:57.222103 ...
-running 2: bfs_simlarge_t2_snappy1 at 2024-04-15 22:46:21.977831 ...
-running 3: bfs_simlarge_t4_snappy1 at 2024-04-15 22:46:46.594582 ...
-running 4: bfs_simlarge_t8_snappy1 at 2024-04-15 22:47:11.251879 ...
-running 5: bfs_simlarge_t16_snappy1 at 2024-04-15 22:47:35.620440 ...
-running 6: bfs_simlarge_t32_snappy1 at 2024-04-15 22:47:59.778882 ...
-running 7: bfs_simlarge_t64_snappy1 at 2024-04-15 22:48:24.183720 ...
-running 8: bfs_simlarge_t128_snappy1 at 2024-04-15 22:48:48.485831 ...
-Finished saving bfs_simlarge_snappy1 result.
+running 1: bfs_simlarge_t1_crunchy1 at 2024-04-16 02:43:48.884055 ...
+running 2: bfs_simlarge_t2_crunchy1 at 2024-04-16 02:44:20.417804 ...
+running 3: bfs_simlarge_t4_crunchy1 at 2024-04-16 02:44:52.769441 ...
+running 4: bfs_simlarge_t8_crunchy1 at 2024-04-16 02:45:25.363023 ...
+running 5: bfs_simlarge_t16_crunchy1 at 2024-04-16 02:45:56.562278 ...
+running 6: bfs_simlarge_t32_crunchy1 at 2024-04-16 02:46:27.812608 ...
+running 7: bfs_simlarge_t64_crunchy1 at 2024-04-16 02:46:59.038292 ...
+running 8: bfs_simlarge_t128_crunchy1 at 2024-04-16 02:47:30.868227 ...
+Finished saving bfs_simlarge_crunchy1 result.
 -----kmeans (2/3)-----
-running 0: kmeans_U_t1_snappy1 at 2024-04-15 22:49:15.497777 ...
+running 0: kmeans_U_t1_crunchy1 at 2024-04-16 02:48:05.411142 ...
 finishing cold start
-running 1: kmeans_U_t1_snappy1 at 2024-04-15 22:49:28.779431 ...
-running 2: kmeans_U_t2_snappy1 at 2024-04-15 22:50:09.267168 ...
-running 3: kmeans_U_t4_snappy1 at 2024-04-15 22:50:48.861984 ...
-running 4: kmeans_U_t8_snappy1 at 2024-04-15 22:51:27.083068 ...
-running 5: kmeans_U_t16_snappy1 at 2024-04-15 22:52:03.042218 ...
-running 6: kmeans_U_t32_snappy1 at 2024-04-15 22:52:36.633301 ...
-running 7: kmeans_U_t64_snappy1 at 2024-04-15 22:53:10.371253 ...
-running 8: kmeans_U_t128_snappy1 at 2024-04-15 22:53:44.785630 ...
-Finished saving kmeans_U_snappy1 result.
+running 1: kmeans_U_t1_crunchy1 at 2024-04-16 02:48:32.032972 ...
+running 2: kmeans_U_t2_crunchy1 at 2024-04-16 02:49:46.758684 ...
+running 3: kmeans_U_t4_crunchy1 at 2024-04-16 02:50:46.427800 ...
+running 4: kmeans_U_t8_crunchy1 at 2024-04-16 02:51:30.500522 ...
+running 5: kmeans_U_t16_crunchy1 at 2024-04-16 02:52:05.932821 ...
+running 6: kmeans_U_t32_crunchy1 at 2024-04-16 02:52:37.057512 ...
+running 7: kmeans_U_t64_crunchy1 at 2024-04-16 02:53:05.941127 ...
+running 8: kmeans_U_t128_crunchy1 at 2024-04-16 02:53:34.519830 ...
+Finished saving kmeans_U_crunchy1 result.
 -----lavaMD (3/3)-----
-running 0: lavaMD_simsmall_t1_snappy1 at 2024-04-15 22:54:12.370370 ...
+running 0: lavaMD_simsmall_t1_crunchy1 at 2024-04-16 02:54:05.974520 ...
 finishing cold start
-running 1: lavaMD_simsmall_t1_snappy1 at 2024-04-15 22:54:41.983798 ...
-running 2: lavaMD_simsmall_t2_snappy1 at 2024-04-15 22:56:04.071996 ...
-running 3: lavaMD_simsmall_t4_snappy1 at 2024-04-15 22:56:53.439604 ...
-running 4: lavaMD_simsmall_t8_snappy1 at 2024-04-15 22:57:28.071387 ...
-running 5: lavaMD_simsmall_t16_snappy1 at 2024-04-15 22:57:54.192478 ...
-running 6: lavaMD_simsmall_t32_snappy1 at 2024-04-15 22:58:16.008788 ...
-running 7: lavaMD_simsmall_t64_snappy1 at 2024-04-15 22:58:37.299475 ...
-running 8: lavaMD_simsmall_t128_snappy1 at 2024-04-15 22:58:57.793766 ...
-Finished saving lavaMD_simsmall_snappy1 result.
+running 1: lavaMD_simsmall_t1_crunchy1 at 2024-04-16 02:55:08.044422 ...
+running 2: lavaMD_simsmall_t2_crunchy1 at 2024-04-16 02:57:51.745281 ...
+running 3: lavaMD_simsmall_t4_crunchy1 at 2024-04-16 02:59:22.056486 ...
+running 4: lavaMD_simsmall_t8_crunchy1 at 2024-04-16 03:00:18.073106 ...
+running 5: lavaMD_simsmall_t16_crunchy1 at 2024-04-16 03:00:54.501522 ...
+running 6: lavaMD_simsmall_t32_crunchy1 at 2024-04-16 03:01:21.686403 ...
+running 7: lavaMD_simsmall_t64_crunchy1 at 2024-04-16 03:01:44.484935 ...
+running 8: lavaMD_simsmall_t128_crunchy1 at 2024-04-16 03:02:04.482471 ...
+Finished saving lavaMD_simsmall_crunchy1 result.
 -----myocyte(4/4)-----
-running 0: myocyte_simsmall_t1_snappy1 at 2024-04-15 22:59:21.376951 ...
+running 0: myocyte_simsmall_t1_crunchy1 at 2024-04-16 03:02:27.819172 ...
 finishing cold start
-running 1: myocyte_simsmall_t1_snappy1 at 2024-04-15 22:59:24.710223 ...
-running 2: myocyte_simsmall_t2_snappy1 at 2024-04-15 22:59:41.301424 ...
-running 3: myocyte_simsmall_t4_snappy1 at 2024-04-15 22:59:57.766106 ...
-running 4: myocyte_simsmall_t8_snappy1 at 2024-04-15 23:00:14.191963 ...
-running 5: myocyte_simsmall_t16_snappy1 at 2024-04-15 23:00:30.601822 ...
-running 6: myocyte_simsmall_t32_snappy1 at 2024-04-15 23:00:47.043688 ...
-running 7: myocyte_simsmall_t64_snappy1 at 2024-04-15 23:01:04.137081 ...
-running 8: myocyte_simsmall_t128_snappy1 at 2024-04-15 23:01:21.859437 ...
-Finished saving myocyte_simsmall_snappy1 result.
+running 1: myocyte_simsmall_t1_crunchy1 at 2024-04-16 03:02:31.030690 ...
+running 2: myocyte_simsmall_t2_crunchy1 at 2024-04-16 03:02:47.449854 ...
+running 3: myocyte_simsmall_t4_crunchy1 at 2024-04-16 03:03:03.689061 ...
+running 4: myocyte_simsmall_t8_crunchy1 at 2024-04-16 03:03:19.882142 ...
+running 5: myocyte_simsmall_t16_crunchy1 at 2024-04-16 03:03:36.105399 ...
+running 6: myocyte_simsmall_t32_crunchy1 at 2024-04-16 03:03:52.330355 ...
+running 7: myocyte_simsmall_t64_crunchy1 at 2024-04-16 03:04:08.633417 ...
+running 8: myocyte_simsmall_t128_crunchy1 at 2024-04-16 03:04:35.621682 ...
+Finished saving myocyte_simsmall_crunchy1 result.
 ==================Script Ended.=====================
