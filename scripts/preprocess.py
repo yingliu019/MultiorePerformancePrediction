@@ -70,6 +70,6 @@ def predict_regression(df):
 
 
 if __name__ == '__main__':
-    df_raw = collect_training_data(r'C:\Users\yingl\OneDrive\Desktop\MultiorePerformancePrediction\data\training_data')
+    df_raw = collect_training_data(r'C:\Users\yingl\OneDrive\Desktop\MultiorePerformancePrediction\MultiorePerformancePrediction\data\training_data')
     # df = preprocess_training(df_raw)
     # predict_regression(df)
