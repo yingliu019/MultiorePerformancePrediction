@@ -1,4 +1,7 @@
 # MultiorePerformancePrediction
+This folder includes all the code for data generation and analysis. 
+
+And it doesn't include the benchmark suite input data as they are too large. 
 
 ## Tool I used
 - Benchmark rodinia: https://github.com/yuhc/gpu-rodinia
@@ -10,7 +13,11 @@ You can skip this step as I have put all the generated data in `.../data/trainin
 
 But if you want to generate on your own, here are the steps:
 
-Fot each host, go to folder `MultiorePerformancePrediction/scripts`. Set up by running
+First get the `benchmark.zip`, it has input data included.
+
+Unzip the file `benchmark.zip` and overwrite the `.../benchmark` folder.
+
+For each host, go to folder `MultiorePerformancePrediction/scripts`. Set up by running
 ```
 module load python-3.12
 module load gcc-12.2

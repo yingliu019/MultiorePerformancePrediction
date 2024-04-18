@@ -44,7 +44,7 @@ from xgboost import plot_importance
 # In[2]:
 
 
-directory = r'C:\Users\yingl\OneDrive\Desktop\MultiorePerformancePrediction\MultiorePerformancePrediction\data\training_data'
+directory = ''  # In the format of: '/home/.../MultiorePerformancePrediction/data/training_data'
 
 def collect_training_data(directory = ''):
     lst = []
