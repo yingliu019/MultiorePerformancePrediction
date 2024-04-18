@@ -33,12 +33,18 @@ import xgboost as xgb
 from xgboost import plot_importance
 
 
+# In[57]:
+
+
+#!pip list --format=freeze > requirements.txt
+
+
 # # Load Training Data
 
 # In[2]:
 
 
-directory = '' # E.g.: '../MultiorePerformancePrediction/data/training_data'
+directory = r'C:\Users\yingl\OneDrive\Desktop\MultiorePerformancePrediction\MultiorePerformancePrediction\data\training_data'
 
 def collect_training_data(directory = ''):
     lst = []
