@@ -35,6 +35,8 @@ tail -f run_benchmark.txt
 ```
 
 ## Data Analysis
-The analysis script is `Analysis.py`. Remember to change the `directory` to `.../data/training_data` folder.
+The analysis script is `Analysis.py`. I used `python-3.12` and the package version is in `requirements.txt`.
+
+Also change the `directory` in `Analysis.py` to where `training_data` exists.
 
 A python colab and its html version are also provided for the result demonstration.
