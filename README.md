@@ -7,6 +7,7 @@ And it doesn't include the benchmark suite input data as they are too large.
 - Benchmark rodinia: https://github.com/yuhc/gpu-rodinia
 - Benchmark Parsec 3.0
 - Standard linux profiler: perf
+- computer servers: https://cims.nyu.edu/dynamic/systems/resources/computeservers/
 
 ## Data Collection
 You can skip this step as I have put all the generated data in `.../data/training_data` folder.
