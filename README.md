@@ -40,3 +40,7 @@ The analysis script is `Analysis.py`. I used `python-3.12` and the package versi
 Also change the `directory` in `Analysis.py` to where `training_data` exists.
 
 A python colab and its html version are also provided for the result demonstration.
+
+## Slides
+https://docs.google.com/presentation/d/1DnRcN1lfxR6Gpr4GAZ_Nhiy444KQEuSxurn_R_yQXns/edit#slide=id.g2d046dbd239_0_763
+
